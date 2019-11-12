@@ -3,6 +3,7 @@ require "conexionBD.php";
 require "empresa.php";
 
 $dbh = connect();
+selectAnuncio();
 
 if(isset($_GET["nom"]) && isset($_GET["email"]) && isset($_GET["tel"]) && isset($_GET["dire"])) {
 
