@@ -6,6 +6,7 @@ require "anuncio.php";
 $dbh = connect();
 $categorias = selectCategorias($dbh);
 
+selectAnuncio($dbh);
 function llenarCategorias($categorias){
     foreach ($categorias as $row){
         echo ("<option value='" . $row["idCategoria"] . "'>" . $row["nomCategoria"]. "</option>");

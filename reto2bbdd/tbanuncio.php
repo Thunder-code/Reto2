@@ -13,19 +13,17 @@ function connect(){
         echo $e->getMessage();
         return null;
     }
-    lanzarConsulta($dbh);
+    selectAnuncio($dbh);
 }
 
 
 function selectAnuncio($dbh){
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
+
     $stmt = $dbh->prepare("select t1.titulo,t1.descripcion,t2.nomCategoria,t3.nomSubcategoria,t4.nomEmpresa 
                             From Anuncio t1, Categoria t2, Subcategoria t3,Empresa t4 where t1.idEmpresa =1 
                             and t1.idCategoria = t2.idCategoria 
                             and t1.idSubcategoria = t3.idSubcategoria 
-                            and t1.idEmpresa = t4.idEmpresa)");
+                            and t1.idEmpresa = t4.idEmpresa");
     $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute();
     echo "<table>";
@@ -62,3 +60,24 @@ function lanzarConsulta($dbh){
     }
     echo "</table>";
 }
+
+function lanzarConsulta1($dbh){
+
+    $stmt = $dbh->prepare("SELECT t1.idAnuncio,t1.imagen,t1.titulo,t1.descripcion,t1.idSubcategoria,t2.nomEmpresa,t1.idCategoria FROM Anuncio t1, Empresa t2 WHERE t1.idEmpresa = t2.idEmpresa");
+    $stmt->setFetchMode(PDO::FETCH_OBJ);
+    $stmt->execute ();
+    echo "<table>";
+    while ($row = $stmt ->fetch()){
+        echo "<tr>
+          <td>".$row->idAnuncio."</td>
+          <td>".$row->imagen."</td>
+          <td>".$row->titulo."</td>
+          <td>".$row->descripcion."</td>
+          <td>".$row->idSubcategoria."</td>
+          <td>".$row->nomEmpresa."</td>
+          <td>".$row->idCategoria."</td>
+        </tr>";
+    }
+    echo "</table>";
+}
+

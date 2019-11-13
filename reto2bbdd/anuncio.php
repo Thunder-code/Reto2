@@ -23,7 +23,7 @@ function selectAnuncio($dbh){
                             From Anuncio t1, Categoria t2, Subcategoria t3,Empresa t4 where t1.idEmpresa =1 
                             and t1.idCategoria = t2.idCategoria 
                             and t1.idSubcategoria = t3.idSubcategoria 
-                            and t1.idEmpresa = t4.idEmpresa)");
+                            and t1.idEmpresa = t4.idEmpresa");
     $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute();
     echo "<div>";
@@ -33,7 +33,7 @@ function selectAnuncio($dbh){
          <div>".$row->descripcion."</div>
          <div>".$row->nomCategoria."</div>
          <div>".$row->nomSubcategoria."</div>
-          <div>".$row->nomEmpresa."</div>
+         <div>".$row->nomEmpresa."</div>
          </div>";
     }
     echo "</div>";
