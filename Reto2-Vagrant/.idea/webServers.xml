@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b53e1e15-3f83-487a-923e-b867f5e0dfb6" name="reto2" url="http://localhost:8765">
+        <fileTransfer port="0" mountedRoot="/" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
