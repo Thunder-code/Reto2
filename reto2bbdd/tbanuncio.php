@@ -13,7 +13,7 @@ function connect(){
         echo $e->getMessage();
         return null;
     }
-    selectAnuncio($dbh);
+    lanzarConsulta($dbh);
 }
 
 
@@ -80,4 +80,7 @@ function lanzarConsulta1($dbh){
     }
     echo "</table>";
 }
+
+
+
 
