@@ -6,7 +6,7 @@ function insertAnuncio($dbh,$titulo,$descripcion,$categoria){
     $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute($data);
 }
-
+/*
 function selectAnuncio($dbh){
     $stmt = $dbh->prepare("select t1.titulo,t1.descripcion,t2.nomCategoria,t3.nomSubcategoria,t4.nomEmpresa 
                             From Anuncio t1, Categoria t2, Subcategoria t3,Empresa t4 where t1.idEmpresa =1 
@@ -51,7 +51,7 @@ function selectAnuncio2($dbh){
     }
     echo "</table>";
 
-}
+}*/
 ?>
 
 

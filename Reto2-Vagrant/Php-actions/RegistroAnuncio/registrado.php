@@ -1,8 +1,3 @@
-<?php
-require "../BD/conexionBD.php";
-require "../BD/anuncio.php";
-
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
