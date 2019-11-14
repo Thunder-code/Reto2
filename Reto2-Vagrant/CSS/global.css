@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+
+}
+
+
+:root{
+    --thundercode-primary-color: #f3a304;   <!-- Naranja -->
+    --thundercode-secondary-color:#333333;  <!-- Gris oscuro -->
+    --thundercode-tertiary-color:#f2f2f2;   <!-- Gris clarito -->
+}
+
+input[type=text], input[type=password]{
+    outline: none;
+    border:0px;
+    border-bottom: 1px solid #333333;
+    min-width: 150px;
+    max-width: 300px;
+    height: 35px;
+    width: 230px;
+}
+
+input[type=submit]{
+    padding: 16px 16px;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+}
+
+
+a{
+    text-decoration: none;
+    font-size: 10px;
+}
+
+a:active{
+    color: #cca000
+}
+
+a:hover{
+    color: #fcb500;
+    cursor: pointer;
+}
+
+
+
+
