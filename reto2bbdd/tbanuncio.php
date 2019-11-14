@@ -13,7 +13,7 @@ function connect(){
         echo $e->getMessage();
         return null;
     }
-    lanzarConsulta($dbh);
+    selectAnuncioInicial($dbh);
 }
 
 
@@ -81,6 +81,48 @@ function lanzarConsulta1($dbh){
     echo "</table>";
 }
 
+
+
+function selectAnuncios($dbh){
+    $stmt = $dbh->prepare("select a.idAnuncio,a.titulo,a.descripcion,a.imagen,c.nomCategoria,e.nomEmpresa,s.nomSubcategoria 
+                           From Anuncio as a
+                           Inner join Empresa as e on a.idEmpresa = e.idEmpresa 
+                           Inner join Categoria as c on a.idCategoria = c.idCategoria 
+                           LEFT join Subcategoria as s on a.idSubcategoria = s.idSubcategoria");
+    $stmt->setFetchMode(PDO::FETCH_OBJ);
+    $stmt->execute();
+    echo "<div>";
+    while ($row = $stmt ->fetch()){
+        echo "<div>
+         <h2>".$row->titulo."</h2>
+         <p>".$row->descripcion."</p>
+         <p>".$row->imagen."</p>
+         <p>".$row->nomCategoria."</p>
+         <p>".$row->nomEmpresa."</p>
+         <p>".$row->nomSubcategoria."</p>
+         </div>";
+    }
+    echo "</div>";
+}
+
+function selectAnuncioInicial($dbh){
+    $stmt = $dbh->prepare("select a.idAnuncio,a.titulo,a.descripcion,a.imagen,c.nomCategoria,e.nomEmpresa,s.nomSubcategoria 
+                           From Anuncio as a
+                           Inner join Empresa as e on a.idEmpresa = e.idEmpresa 
+                           Inner join Categoria as c on a.idCategoria = c.idCategoria 
+                           LEFT join Subcategoria as s on a.idSubcategoria = s.idSubcategoria");
+    $stmt->setFetchMode(PDO::FETCH_OBJ);
+    $stmt->execute();
+    echo "<div class='addAnuncio'>";
+    while ($row = $stmt ->fetch()){
+        echo "<div class='Anuncio'>
+         <h2 class='tituloAnuncio'>".$row->titulo."</h2>
+         <div class='descripcion'>".$row->descripcion."</div>
+         <p class='imgAnuncio'>".$row->imagen."</p>
+         </div>";
+    }
+    echo "</div>";
+}
 
 
 

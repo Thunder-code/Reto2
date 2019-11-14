@@ -56,9 +56,11 @@ function selectAnuncio2($dbh){
 
 
 function selectAnuncios($dbh){
-    $stmt = $dbh->prepare("select t1.titulo,t1.descripcion,t2.nomCategoria,t4.nomEmpresa From Anuncio t1, Categoria t2,Empresa t4  
-                            where t1.idCategoria = t2.idCategoria 
-                            and t1.idEmpresa = t4.idEmpresa");
+    $stmt = $dbh->prepare("select a.idAnuncio,a.titulo,a.descripcion,a.imagen,c.nomCategoria,e.nomEmpresa,s.nomSubcategoria 
+                           From Anuncio as a
+                           Inner join Empresa as e on a.idEmpresa = e.idEmpresa 
+                           Inner join Categoria as c on a.idCategoria = c.idCategoria 
+                           LEFT join Subcategoria as s on a.idSubcategoria = s.idSubcategoria");
     $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute();
     echo "<div>";
@@ -66,12 +68,13 @@ function selectAnuncios($dbh){
         echo "<div>
          <p>".$row->titulo."</p>
          <p>".$row->descripcion."</p>
+         <p>".$row->imagen."</p>
          <p>".$row->nomCategoria."</p>
          <p>".$row->nomEmpresa."</p>
+         <p>".$row->nomSubcategoria."</p>
          </div>";
     }
     echo "</div>";
-
 }
 
 
