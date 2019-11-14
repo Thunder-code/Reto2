@@ -23,7 +23,7 @@ if(isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["passw
 function comprobarUsuario($dbh){
     $data = array("username" => $_POST["username"]);
 
-    $stmt = $dbh->prepare("SELECT nomUsuario FROM Usuarios Where nomUsuario = :username");
+    $stmt = $dbh->prepare("SELECT nomUsuario FROM Usuario Where nomUsuario = :username");
     $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute ($data);
 

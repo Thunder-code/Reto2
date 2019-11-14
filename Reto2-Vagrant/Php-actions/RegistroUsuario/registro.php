@@ -16,26 +16,43 @@ function registroMal($username,$pass,$malRegistro)
 }
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Registro.php</title>
+        <link rel="stylesheet" href="../../CSS/global.css">
+        <link rel="stylesheet" href="../../CSS/registro-usuario.css">
     </head>
     <body>
-        <div id="formuRegistro">
-            <form action="comprobarRegistro.php" method="post">
-                <label>Nombre de usuario <input type="text" name="username"></label></br></br>
-                <label>Contraseña <input type="password" name="password"></label>
-                <label>Repetir contraseña <input type="password" name="password2"</label></br></br>
+    <div class="contenedor">
+        <div id="formuRegistro" class="cFormulario">
 
-                <input type="submit" name="resgistrarse" value="Registrarse">
+            <form action="comprobarRegistro.php" method="post">
+                <div class="tituloFormulario"><h2>Registrate</h2></div>
+                <div class="camposFormulario">
+                <input type="text" name="username" id="username" placeholder="Nombre de usuario">
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                <input type="password" name="password2" id="password2" placeholder="Repetir Contraseña" required>
+                </div>
+                <div class="botonFormulario">
+                  <input type="submit" name="resgistrarse" value="Registrarse">
+                </div>
+              <?php  if ($malRegistro == true) {
+                if ($username == false) {
+                    echo "<div class='mensajeError'>" . "<p>" .  registroMal( $username,$pass, $malRegistro). "</p>". " </div>";
+                } elseif ($pass == false) {
+                    echo "<div class='mensajeError'>" . "<p>" . registroMal($username,$pass, $malRegistro) . "</p>". " </div>";
+                }
+                } ?>
+                <div class="linkFormulario">
+                <a href="../../html/login.php">Ya tengo una cuenta</a>
+
+                </div>
             </form>
 
-            <a href="">Ya tengo una cuenta</a>
-            <p><?php echo(registroMal($username,$pass,$malRegistro))?></p>
+
+         </div>
         </div>
     </body>
 </html>

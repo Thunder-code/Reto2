@@ -9,9 +9,9 @@
 
 
 :root{
-    --thundercode-primary-color: #f3a304;   <!-- Naranja -->
-    --thundercode-secondary-color:#333333;  <!-- Gris oscuro -->
-    --thundercode-tertiary-color:#f2f2f2;   <!-- Gris clarito -->
+    --thundercode-primary-color: #f3a304;
+    --thundercode-secondary-color: #333333;
+    --thundercode-tertiary-color: #f2f2f2;
 }
 
 input[type=text], input[type=password]{
@@ -24,9 +24,6 @@ input[type=text], input[type=password]{
     width: 230px;
 }
 
-input[type=submit]{
-    padding: 16px 16px;
-}
 
 input[type=submit]:hover{
     cursor: pointer;
@@ -36,6 +33,7 @@ input[type=submit]:hover{
 a{
     text-decoration: none;
     font-size: 10px;
+    color: black;
 }
 
 a:active{
@@ -45,6 +43,10 @@ a:active{
 a:hover{
     color: #fcb500;
     cursor: pointer;
+}
+
+a:visited{
+    color: #434343;
 }
 
 

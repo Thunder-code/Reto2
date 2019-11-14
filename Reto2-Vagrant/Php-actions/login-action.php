@@ -8,7 +8,7 @@ function comprobarLogin ($dbh, $usuario,$password){
     $data = array("usuario" => $usuario,
                   "password" => $password);
 
-    $stmt = $dbh->prepare("SELECT nomUsuario,password FROM Usuarios Where nomUsuario = :usuario AND password = :password");
+    $stmt = $dbh->prepare("SELECT nomUsuario,password FROM Usuario Where nomUsuario = :usuario AND password = :password");
     $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute($data);
 
