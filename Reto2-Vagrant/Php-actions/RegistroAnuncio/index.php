@@ -2,7 +2,6 @@
 require "../BD/conexionBD.php";
 require "../BD/anuncio.php";
 
-$dbh = connect();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +11,7 @@ $dbh = connect();
     </head>
     <body>
         <p>El anuncio se ha creado</p>
-        <div><?php echo(selectAnuncio($dbh))?></div>
+        <div></div>
     </body>
 </html>
 

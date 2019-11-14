@@ -1,8 +1,4 @@
 <?php
-include "conexionBD.php";
-$dbh = connect();
-selectAnuncio2($dbh);
-
 function insertAnuncio($dbh,$titulo,$descripcion,$categoria){
     $data = array('descripcion' => $descripcion, 'titulo'=> $titulo,'idempresa' => '1', 'idcategoria' => $categoria);
 
