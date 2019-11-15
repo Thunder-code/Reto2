@@ -42,7 +42,7 @@
                      </div>
                      <div class="extrasFormulario">
                          <a href="../Php-actions/RegistroUsuario/registro.php">Registrate</a>
-                         <a>Entra como invitado</a>
+                         <a href="index.php?tipo=guest">Entra como invitado</a>
                      </div>
                    <?php if($isLoginIncorrecto==true){
                        echo "<div class='mensajeError'>" . "<p>" .  mensajeLogin($isLoginIncorrecto). "</p>". " </div>";

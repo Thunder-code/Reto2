@@ -1,5 +1,6 @@
 <?php
 $isLoginIncorrecto = "";
+$tipo ="";
 
 $usuario = $_POST["usuario"];
 $password = $_POST["password"];
@@ -16,11 +17,13 @@ function comprobarLogin ($dbh, $usuario,$password){
 
     if($row == null){
         $isLoginIncorrecto = true;
+
         require "../html/login.php";
 
     }
       else {
-          $isLoginIncorrecto = false;
+        $isLoginIncorrecto = false;
+        $tipo = "user";
         require "../html/index.php";
 
     }

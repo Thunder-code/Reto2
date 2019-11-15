@@ -11,7 +11,7 @@
 :root{
     --thundercode-primary-color: #f3a304;
     --thundercode-secondary-color: #333333;
-    --thundercode-tertiary-color: #f2f2f2;
+    --thundercode-tertiary-color: #e6e6e6;
 }
 
 input[type=text], input[type=password]{
