@@ -13,17 +13,17 @@ if(isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["passw
 
     if($username == true && $pass == true){
         insertUsuario($dbh,$_POST["username"],$_POST["password"]);
-        include "index.php";
+        include "usuarioRegistrado.php";
     }else {
         $malRegistro = true;
-        include "registro.php";
+        include "resgitroUsuario.php";
     }
 }
 
 function comprobarUsuario($dbh){
     $data = array("username" => $_POST["username"]);
 
-    $stmt = $dbh->prepare("SELECT nomUsuario FROM Usuarios Where nomUsuario = :username");
+    $stmt = $dbh->prepare("SELECT nomUsuario FROM Usuario Where nomUsuario = :username");
     $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute ($data);
 
