@@ -13,19 +13,4 @@ function selectCategorias ($dbh){
     $array = $stmt->fetchAll(PDO::FETCH_ASSOC);
     return $array;
 }
-
-function selectIdCategoria($dbh){
-    $data = array();
-
-    $stmt = $dbh->prepare("SELECT idCategoria FROM Categoria
-                           WHERE idCategoria = ");
-    $stmt->setFetchMode(PDO::FETCH_OBJ);
-    $stmt->execute($data);
-
-    while ($row = $stmt ->fetch()){
-         $idCategoria = $row->idCategoria;
-
-    }
-    return $idCategoria;
-}
 ?>

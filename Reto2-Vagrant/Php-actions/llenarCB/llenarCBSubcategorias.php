@@ -1,6 +1,6 @@
 <?php
-require "BD/conexionBD.php";
-require "BD/subcategoria.php";
+require "../BD/conexionBD.php";
+require "../BD/subcategoria.php";
 
 if(isset($_POST["idCategoria"])){
     $html= "";

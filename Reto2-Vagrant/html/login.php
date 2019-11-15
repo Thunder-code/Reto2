@@ -4,6 +4,7 @@
 
 <html>
     <head>
+       <!-- <link rel="stylesheet" href="/CSS/normalize.css">-->
         <link rel="stylesheet" href="/CSS/global.css">
         <link rel="stylesheet" href="/CSS/login.css">
 
@@ -37,12 +38,11 @@
                  <form id="form" action="/Php-actions/login-action.php" method="post">
                      <div class="inputsFormulario">
                          <input type="text" id='usuario' name='usuario' placeholder="Usuario">
-                         <input type="password" id='password' name='password' placeholder="Contraseña">
+                         <input type="password" id='password' name='password' placeholder="Contraseña" >
                      </div>
                      <div class="extrasFormulario">
-                         <a>Registrate</a>
-                         <a>Entra como invitado</a>
-
+                         <a href="../Php-actions/RegistroUsuario/resgitroUsuario.php">Registrate</a>
+                         <a href="index.php?tipo=guest">Entra como invitado</a>
                      </div>
                    <?php if($isLoginIncorrecto==true){
                        echo "<div class='mensajeError'>" . "<p>" .  mensajeLogin($isLoginIncorrecto). "</p>". " </div>";

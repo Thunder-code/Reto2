@@ -1,5 +1,5 @@
 <?php
-    require("Php-actions/llenarCBCategorias.php");
+  require("Php-actions/llenarCB/llenarCBCategorias.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@
     <body>
         <div id="buscador">
             <div>
-                <p>V
+                <p>
                 <input type="text" name="buscadorTitulo">
                 <input type="submit" name="botonBuscar" value="Buscar">
                 </p>
