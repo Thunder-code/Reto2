@@ -1,11 +1,13 @@
 <?php
-    require ("Php-actions/llenarCB.php");
+    require("Php-actions/llenarCBCategorias.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>index.php</title>
+        <script src="javascript/jquery-3.4.1.min.js"></script>
+        <script src="javascript/llenarSubcategorias.js"></script>
     </head>
     <body>
         <div id="buscador">
@@ -17,13 +19,12 @@
             </div>
             <div>
                 <label>Categoria: </label>
-                <select name="categoria" id="categoria">
+                <select name="categorias" id="categorias">
                     <?php llenarCategorias($categorias)?>
                 </select>
 
                 <label>Subcategoria: </label>
-                <select name="categoria" id="categoria">
-                    <?php llenarCategorias($categorias)?>
+                <select name="subcategorias" id="subcategorias">
                 </select>
 
                 <label for="busEmpresa">Empresa: </label><input type="text" name="buscadorEmpresa" id="busEmpresa">

@@ -1,5 +1,5 @@
 <?php
-require ("../llenarCB.php");
+require("../llenarCBCategorias.php");
 ?>
 
 <!DOCTYPE html>

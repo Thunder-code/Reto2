@@ -18,7 +18,7 @@ function selectIdCategoria($dbh){
     $data = array();
 
     $stmt = $dbh->prepare("SELECT idCategoria FROM Categoria
-                           WHERE nomCategoria = " . $nomCategoria);
+                           WHERE idCategoria = ");
     $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute($data);
 
