@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Imagen</title>
+    <title>index.php</title>
 </head>
 <body>
-<img src='leer.php' border='0'>
+<p>El anuncio se ha creado</p>
 </body>
 </html>
-

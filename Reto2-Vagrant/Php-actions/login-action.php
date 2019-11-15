@@ -28,7 +28,7 @@ function comprobarLogin ($dbh, $usuario,$password){
 
     }
 }
-include "conexionBD.php";
+include "BD/conexionBD.php";
 $dbh = connect();
 comprobarLogin($dbh,$usuario,$password);
 

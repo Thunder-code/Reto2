@@ -7,7 +7,6 @@
 
 }
 
-
 :root{
     --thundercode-primary-color: #f3a304;
     --thundercode-secondary-color: #333333;
@@ -24,11 +23,9 @@ input[type=text], input[type=password]{
     width: 230px;
 }
 
-
 input[type=submit]:hover{
     cursor: pointer;
 }
-
 
 a{
     text-decoration: none;
@@ -48,7 +45,3 @@ a:hover{
 a:visited{
     color: #434343;
 }
-
-
-
-

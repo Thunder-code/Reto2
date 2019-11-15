@@ -2,18 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7039a936-705a-465d-8c9b-a6a5e28f3d27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CSS/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/llenarSubcategorias.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/BD/anuncio.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/BD/anuncio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/BD/categorias.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/BD/categorias.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/BD/subcategoria.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/BD/subcategoria.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/BD/usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/BD/usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroAnuncio/comprobarRegistro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroAnuncio/comprobarRegistro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroAnuncio/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroAnuncio/anuncioRegistrado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroAnuncio/registro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroAnuncio/registroAnuncio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroEmpresa/comprobarRegistro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroEmpresa/comprobarRegistro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroEmpresa/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroEmpresa/empresaRegistrado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroUsuario/comprobarRegistro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroUsuario/comprobarRegistro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroUsuario/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroUsuario/usuarioRegistrado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroUsuario/registro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroUsuario/resgitroUsuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/conexionBD.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Php-actions/login-action.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/login-action.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pruebas imagen/grabar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pruebas imagen/leer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pruebas imagen/mostrar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pruebas imagen/pruebaImagen.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/html/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multimedia/gear.png" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/gear.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,6 +102,7 @@
       <workItem from="1573637998662" duration="3202000" />
       <workItem from="1573717603937" duration="10329000" />
       <workItem from="1573802526204" duration="10105000" />
+      <workItem from="1573819520785" duration="1003000" />
     </task>
     <servers />
   </component>

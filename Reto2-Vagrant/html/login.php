@@ -41,7 +41,7 @@
                          <input type="password" id='password' name='password' placeholder="Contraseña" >
                      </div>
                      <div class="extrasFormulario">
-                         <a href="../Php-actions/RegistroUsuario/registro.php">Registrate</a>
+                         <a href="../Php-actions/RegistroUsuario/resgitroUsuario.php">Registrate</a>
                          <a href="index.php?tipo=guest">Entra como invitado</a>
                      </div>
                    <?php if($isLoginIncorrecto==true){
