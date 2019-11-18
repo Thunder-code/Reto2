@@ -1,0 +1,81 @@
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(252, 181,0,8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../multimedia/ny-wallpaper.jpg");
+    background-size: cover;
+}
+
+.cFormulario{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px 0 rgb(51,51,0.2);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.tituloFormulario{
+    width: 85%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mensajeError{
+    color:#ff6f6b;
+    width:200px;
+    border:1px solid red;
+    text-align:center;
+    background-color:rgba(215, 44, 44, 0.1);
+}
+
+.camposFormulario{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.botonFormulario{
+    width: 100%;
+    height:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkFormulario{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input:focus{
+    border-bottom: 1px solid var(--thundercode-primary-color);
+}
+
+input[type=submit]{
+    height: 100px;
+}

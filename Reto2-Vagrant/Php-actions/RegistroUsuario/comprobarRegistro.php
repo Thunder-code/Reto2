@@ -13,10 +13,10 @@ if(isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["passw
 
     if($username == true && $pass == true){
         insertUsuario($dbh,$_POST["username"],$_POST["password"]);
-        include "index.php";
+        include "usuarioRegistrado.php";
     }else {
         $malRegistro = true;
-        include "registro.php";
+        include "resgitroUsuario.php";
     }
 }
 

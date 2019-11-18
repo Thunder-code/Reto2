@@ -1,0 +1,52 @@
+footer{
+    height: 250px;
+    background-color: #292929;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    color: #bfbfbf;
+    font-size: 15px;
+
+}
+
+.contact p, .about p, .corporativas p{
+    color: #bfbfbf;
+}
+h3{
+color:white;
+    margin-bottom: 10px;
+}
+ .redes img{
+    width: 30px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.ajebask{
+    width: 200px;
+    height: auto;
+}
+
+.corporativas{
+    width:33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.licencias{
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.redes{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

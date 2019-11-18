@@ -8,17 +8,21 @@ echo $_GET["imagen"];
 
 if(isset($_GET["titulo"]) && isset($_GET["descripcion"]) && isset($_GET["categoria"]) && isset($_GET["imagen"])) {
     echo "<p>" .$_GET["imagen"]."</p>";
+    $carpetaDestino="../../imagenes/";
+
+    $origen=$_FILES["imagen"]["tmp_name"];
+    $destino=$carpetaDestino.$_FILES["imagen"]["name"];
+
+    if(@move_uploaded_file($origen, $destino)){
+        echo "<br>".$_FILES["imagen"]["name"]." movido correctamente";
+    }else
+        echo "<br>No se ha podido mover el archivo: ".$_FILES["imagen"]["name"];
+
+    $nomImagen = $_GET["imagen"];
 
 
-
-
-    $carpeta_destino = '/Users/2gdaw06/Downloads/'.$_GET["imagen"];
-    echo "<p>".$carpeta_destino."</p>";
-
-
-    insertAnuncio($dbh, $_GET["titulo"], $_GET["descripcion"],$_GET["categoria"], $carpeta_destino);
-    require ("anunciado.php");
+    insertAnuncio($dbh, $_GET["titulo"], $_GET["descripcion"],$_GET["categoria"],$nomImagen);
+    include "anuncioRegistrado.php";
     selectAnuncioInicial($dbh);
 }
-
 ?>

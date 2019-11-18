@@ -1,7 +1,30 @@
 <html>
 <head></head>
 <body>
-<h1>Benvenutti a la felichita al cuadrato</h1>
+
+<script src="../javascript/jquery-3.4.1.min.js"></script>
+<script src="../javascript/index.js"></script>
+<script src="../javascript/login.js"></script>
+<?php
+
+include "header.php";
+include "footer.php";
+
+
+
+if ($tipo == "user") {
+    echo "<h1> HOLA </h1>";
+
+}
+else{
+echo "<script> deshabilitarFunciones(); </script>";
+
+}
+?>
+
+
+
 </body>
+
 </html>
 
