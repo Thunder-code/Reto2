@@ -26,7 +26,8 @@ function comprobarLogin ($dbh, $usuario,$password){
         $tipo = "user";
         require "../html/index.php";
 
-    }
+
+      }
 }
 include "BD/conexionBD.php";
 $dbh = connect();
