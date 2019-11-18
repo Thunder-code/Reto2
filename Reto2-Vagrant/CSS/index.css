@@ -1,0 +1,40 @@
+.Anuncio{
+    border: 1px solid var(--thundercode-primary-color);
+    background-color:rgba(252, 181, 0, 0.1) ;
+    width: 20%;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    flex-direction: column;
+    padding: 5px;
+
+}
+.contenedorinformacion{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.imgAnuncio{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imgAnuncio img{
+    min-width: 300px;
+    height: auto;
+}

@@ -4,15 +4,16 @@ require "../BD/anuncio.php";
 
 $dbh = connect();
 
-echo $_GET["imagen"];
+if(isset($_POST["titulo"]) && isset($_POST["descripcion"]) && isset($_POST["categoria"]) && isset($_FILES["imagen"])) {
 
-if(isset($_GET["titulo"]) && isset($_GET["descripcion"]) && isset($_GET["categoria"]) && isset($_GET["imagen"])) {
-    echo "<p>" .$_GET["imagen"]."</p>";
+$rutafototemporal = $_FILES["imagen"]["tmp_name"];
+$array = explode('.', $_FILES['imagen']['name']);
+$ext = end($array);
+$nombreFoto = md5(basename($_FILES['imagen']['name'])). '.' . $ext;
+$nuevaRuta = "../../imagenes/" . $nombreFoto;
+move_uploaded_file($rutafototemporal,$nuevaRuta);
 
-    $carpeta_destino = '/Users/2gdaw06/Downloads/'.$_GET["imagen"];
-    echo "<p>".$carpeta_destino."</p>";
-
-    insertAnuncio($dbh, $_GET["titulo"], $_GET["descripcion"],$_GET["categoria"]);
+    $filas = insertAnuncio($dbh, $_POST["titulo"], $_POST["descripcion"],$_POST["categoria"],$nombreFoto);
     include "anuncioRegistrado.php";
     selectAnuncioInicial($dbh);
 }

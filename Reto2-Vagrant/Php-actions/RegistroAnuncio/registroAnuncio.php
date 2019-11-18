@@ -10,7 +10,7 @@ require("../llenarCB/llenarCBCategorias.php");
 </head>
 <body>
 <div id="formuAnuncio">
-    <form action="comprobarRegistro.php" method="get" enctype='multipart/form-data'>
+    <form action="comprobarRegistro.php" method="post" enctype='multipart/form-data'>
         <label>Titulo: <input type="text" name="titulo"></label></br></br>
         <label>Descripcion: <input type="text" name="descripcion"></label></br></br>
         <label>Imagen: <input type="file" name="imagen"</label></br></br>
