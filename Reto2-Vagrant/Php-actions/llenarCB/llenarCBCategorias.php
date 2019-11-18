@@ -1,7 +1,6 @@
 <?php
-require ("../BD/conexionBD.php");
-require ("../BD/categorias.php");
-
+include ("Php-actions/BD/conexionBD.php");
+include ("Php-actions/BD/categorias.php");
 
 $dbh = connect();
 $categorias = selectCategorias($dbh);

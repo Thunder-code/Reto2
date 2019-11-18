@@ -1,9 +1,4 @@
 <?php
-
-include "conexionBD.php";
-$dbh = connect();
-insertSubcategoria($dbh);
-
 function insertSubcategoria($dbh){
     $data = array('nomSubcat' => 'Furgonetas','idCat' => '3');
 
