@@ -1,7 +1,7 @@
 <?php
 require_once "../BD/conexionBD.php";
 require "../BD/subcategoria.php";
-
+//Funcion para llenar el combobox de subcategorias
 if(isset($_POST["idCategoria"])){
     $html= "";
     $dbh = connect();

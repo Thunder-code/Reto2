@@ -1,4 +1,5 @@
 <?php
+//Funcion para insertar empresa
 function insertEmpresa($dbh,$nombre,$email,$telefono,$direccion){
     $data = array('nombre' => $nombre,'email' => $email,'telefono' => $telefono,'direccion'=> $direccion);
 
