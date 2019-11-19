@@ -15,9 +15,11 @@ $dbh = connect();
 
 
   ?>
+<div class="cortinaGris"></div>
     <div class="contenedor">
         <?php selectAnuncioInicial($dbh); ?>
     </div>
+
 <?php
 require "footer.php";
 ?>
