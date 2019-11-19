@@ -1,7 +1,3 @@
-
-
-
-
 <html>
     <head>
        <!-- <link rel="stylesheet" href="/CSS/normalize.css">-->
