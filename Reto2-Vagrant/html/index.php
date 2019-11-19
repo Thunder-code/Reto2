@@ -7,22 +7,19 @@
 <link rel="stylesheet" href="../CSS/global.css">
 <?php
 
+
 require "header.php";
-require "../Php-actions/BD/conexionBD.php";
+require_once "../Php-actions/BD/conexionBD.php";
 require "../Php-actions/BD/anuncio.php";
-require "footer.php";
- $dbh = connect();
+$dbh = connect();
+
+
   ?>
-
     <div class="contenedor">
-        <?php selectAnuncioInicial($dbh);
-        ?>
+        <?php selectAnuncioInicial($dbh); ?>
     </div>
-
-
 <?php
-
-
+require "footer.php";
 ?>
 
 
