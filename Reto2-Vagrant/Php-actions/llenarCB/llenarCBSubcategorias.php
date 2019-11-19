@@ -1,5 +1,5 @@
 <?php
-require "../BD/conexionBD.php";
+require_once "../BD/conexionBD.php";
 require "../BD/subcategoria.php";
 
 if(isset($_POST["idCategoria"])){
