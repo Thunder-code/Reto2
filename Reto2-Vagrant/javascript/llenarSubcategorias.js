@@ -4,7 +4,7 @@ $(document).ready(function(){
             let idCategoria = $(this).val();
             console.log(idCategoria);
             $.post("../Php-actions/llenarCB/llenarCBSubcategorias.php", {idCategoria: idCategoria}, function (data) {
-                alert(data);
+                console.log(data);
                 $("#subcategorias").html(data);
             });
         });

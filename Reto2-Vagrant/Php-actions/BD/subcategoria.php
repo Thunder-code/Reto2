@@ -11,9 +11,9 @@ function insertSubcategoria($dbh){
 function selectSubcategorias ($dbh,$idCategoria){
     $data = array('idcategoria' => $idCategoria);
 
-    $stmt = $dbh->prepare("SELECT idSubcategoria,nomCategoria FROM Subcategoria
-                           WHERE idCategoria = (SELECT idCategoria FROM categoria
-                                                WHERE idCategoria = :idcategoria");
+    $stmt = $dbh->prepare("SELECT idSubcategoria,nomSubcategoria FROM Subcategoria
+                           WHERE idCategoria = (SELECT idCategoria FROM Categoria
+                                                WHERE idCategoria = :idcategoria)");
     $stmt->execute($data);
     $array = $stmt->fetchAll(PDO::FETCH_ASSOC);
     return $array;
