@@ -1,0 +1,59 @@
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(252, 181,0,8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../multimedia/wallpaper3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cFormulario{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px 0 rgb(51,51,0.2);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inputsFormulario{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.botonFormulario{
+    width: 100%;
+    height:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloFormulario{
+    width: 85%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
