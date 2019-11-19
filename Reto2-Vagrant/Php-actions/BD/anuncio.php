@@ -15,14 +15,15 @@ function selectAnuncioInicial($dbh){
     $stmt->execute();
 
     while ($row = $stmt->fetch()) {
-        echo "<div class='Anuncio' id='anuncio'>
+        echo "<div class='Anuncio'>
         <div class='contenedorinformacion'>
             <h2 class='tituloAnuncio'>" . $row->titulo . "</h2>
-            
-                <div class='descripcion hidden'>" . $row->descripcion . "</div>
-                <div class='nomCategoria hidden'>" . $row->nomCategoria . "</div>
-                <div class='nomEmpresa hidden'>" . $row->nomEmpresa . "</div>
-                <div class='nomSubcategoria hidden'>" . $row->nomSubcategoria . "</div>
+               <div class='oculto'>
+                    <div class='descripcion'>" . $row->descripcion . "</div>
+                    <div class='nomCategoria'>" . $row->nomCategoria . "</div>
+                    <div class='nomEmpresa'>" . $row->nomEmpresa . "</div>
+                    <div class='nomSubcategoria'>" . $row->nomSubcategoria . "</div>
+               </div>
         
         </div>
                <div class='imgAnuncio'><img src='../../imagenes/" . $row->imagen . "'></div>
