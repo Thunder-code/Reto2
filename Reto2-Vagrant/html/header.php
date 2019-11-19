@@ -22,7 +22,7 @@
             <nav class="submenu">
                 <ul class="submenu-items">
                     <li class="submenu-item"><a href="#" class="submenu-link">Ver Anuncios</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">Publicar Anuncios</a></li>
+                    <li class="submenu-item"><a href="../Php-actions/RegistroAnuncio/registroAnuncio.php" class="submenu-link" >Publicar Anuncios</a></li>
                     <li class="submenu-item"><a href="#" class="submenu-link">Borrar Anuncios</a></li>
                     <li class="submenu-item"><a href="#" class="submenu-link">Editar Anuncios</a></li>
                 </ul>

@@ -26,10 +26,12 @@ function comprobarLogin ($dbh, $usuario,$password){
         $tipo = "user";
         require "../html/index.php";
 
-    }
+
+      }
 }
-include "BD/conexionBD.php";
+require_once "BD/conexionBD.php";
 $dbh = connect();
 comprobarLogin($dbh,$usuario,$password);
+
 
 ?>

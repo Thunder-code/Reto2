@@ -31,26 +31,6 @@ require ("../llenarCB/llenarCBCategorias.php");
                 <input type="submit" name="botonBuscar" value="Buscar">
             </form>
         </div>
-        <div id="anuncios">
-            <div class="anuncio">
-                <h3>Anuncio 1</h3>
-            </div>
-            <div class="anuncio">
-                <h3>Anuncio 2</h3>
-            </div>
-            <div class="anuncio">
-                <h3>Anuncio 3</h3>
-            </div>
-            <div class="anuncio">
-                <h3>Anuncio 4</h3>
-            </div>
-            <div class="anuncio">
-                <h3>Anuncio 5</h3>
-            </div>
-            <div class="anuncio">
-                <h3>Anuncio 6</h3>
-            </div>
-        </div>
     </body>
 </html>
 
