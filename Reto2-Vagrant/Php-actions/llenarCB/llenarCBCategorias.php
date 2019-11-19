@@ -1,6 +1,6 @@
 <?php
-include ("Php-actions/BD/conexionBD.php");
-include ("Php-actions/BD/categorias.php");
+    include ("../BD/conexionBD.php");
+    include ("../BD/categorias.php");
 
 $dbh = connect();
 $categorias = selectCategorias($dbh);

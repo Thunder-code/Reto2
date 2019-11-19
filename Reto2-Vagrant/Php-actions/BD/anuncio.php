@@ -1,9 +1,8 @@
 <?php
-function insertAnuncio($dbh,$titulo,$descripcion,$categoria){
-    $data = array('descripcion' => $descripcion, 'titulo'=> $titulo,'idempresa' => '1', 'idcategoria' => $categoria);
-
-    $stmt = $dbh->prepare("INSERT INTO Anuncio (titulo,descripcion,idEmpresa,idCategoria) VALUES (:titulo,:descripcion,:idempresa,:idcategoria)") ;
-    $stmt->setFetchMode(PDO::FETCH_OBJ);
+function insertAnuncio($dbh,$titulo,$descripcion,$categoria,$nombreFoto){
+    $data = array('descripcion' => $descripcion, 'titulo'=> $titulo,'idempresa' => '1', 'idcategoria' => $categoria,'imagen' => $nombreFoto);
+    print_r($data);
+    $stmt = $dbh->prepare("INSERT INTO Anuncio (imagen,titulo,descripcion,idEmpresa,idCategoria) VALUES (:imagen,:titulo,:descripcion,:idempresa,:idcategoria)") ;
     $stmt->execute($data);
 }
 function selectAnuncioInicial($dbh){
@@ -14,15 +13,21 @@ function selectAnuncioInicial($dbh){
                            LEFT join Subcategoria as s on a.idSubcategoria = s.idSubcategoria");
     $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute();
-    echo "<div class='addAnuncio'>";
+
     while ($row = $stmt->fetch()) {
-        echo "<div class='Anuncio'>
-         <h2 class='tituloAnuncio'>" . $row->titulo . "</h2>
-         <div class='descripcion'>" . $row->descripcion . "</div>
-         <p class='imgAnuncio'><img src='" . $row->imagen . "'></p>
+        echo "<div class='Anuncio' id='anuncio'>
+        <div class='contenedorinformacion'>
+            <h2 class='tituloAnuncio'>" . $row->titulo . "</h2>
+            
+                <div class='descripcion hidden'>" . $row->descripcion . "</div>
+                <div class='nomCategoria hidden'>" . $row->nomCategoria . "</div>
+                <div class='nomEmpresa hidden'>" . $row->nomEmpresa . "</div>
+                <div class='nomSubcategoria hidden'>" . $row->nomSubcategoria . "</div>
+        
+        </div>
+               <div class='imgAnuncio'><img src='../../imagenes/" . $row->imagen . "'></div>
          </div>";
     }
-    echo "</div>";
 }
 
 function selectAnuncioFiltrado($dbh){
@@ -47,5 +52,14 @@ function selectAnuncioFiltrado($dbh){
     }
     echo "</div>";
 }
+function deleteAnuncio ($dbh,$idanuncio){
+    $data = array('idanuncio' => $idanuncio);
+    $stmt = $dbh->prepare("delete from Anuncio Where idAnuncio = :idAnuncio");
+    $stmt->execute($data);
+
+
+
+}
+
 ?>
 
