@@ -1,12 +1,15 @@
 <?php
+//Funcion para insertar un anuncio
 function insertAnuncio($dbh,$titulo,$descripcion,$categoria,$nombreFoto){
     $data = array('descripcion' => $descripcion, 'titulo'=> $titulo,'idempresa' => '1', 'idcategoria' => $categoria,'imagen' => $nombreFoto);
     print_r($data);
     $stmt = $dbh->prepare("INSERT INTO Anuncio (imagen,titulo,descripcion,idEmpresa,idCategoria) VALUES (:imagen,:titulo,:descripcion,:idempresa,:idcategoria)") ;
     $stmt->execute($data);
 }
+//Carga inicial de anuncions en la pagina principal
 function selectAnuncioInicial($dbh){
-    $stmt = $dbh->prepare("select a.idAnuncio,a.titulo,a.descripcion,a.imagen,c.nomCategoria,e.nomEmpresa,s.nomSubcategoria 
+    //seleccionamos todos los atributos del anuncio
+    $stmt = $dbh->prepare("select a.idAnuncio,a.titulo,a.descripcion,a.imagen,c.nomCategoria,e.nomEmpresa,s.nomSubcategoria
                            From Anuncio as a
                            Inner join Empresa as e on a.idEmpresa = e.idEmpresa 
                            Inner join Categoria as c on a.idCategoria = c.idCategoria 
@@ -30,7 +33,7 @@ function selectAnuncioInicial($dbh){
          </div>";
     }
 }
-
+//Selecionamos los anuncios que nos llegan de los filtros
 function selectAnuncioFiltrado($dbh){
     $stmt = $dbh->prepare("select a.idAnuncio,a.titulo,a.descripcion,a.imagen,c.nomCategoria,e.nomEmpresa,s.nomSubcategoria 
                            From Anuncio as a

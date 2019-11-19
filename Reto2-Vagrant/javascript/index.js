@@ -1,12 +1,8 @@
 $(document).ready(function () {
-    function deshabilitarFunciones() {
-            alert("hola");
-            $('#gear').css("display", "none");
-    }
 
 
+    //Funcion para mostrar los detalles de un anuncio al hacer click
     $('.Anuncio').on("click",function () {
-
 
         $(this).find(".oculto").addClass("visible")
         $(this).find(".oculto").removeClass('oculto');
@@ -20,9 +16,8 @@ $(document).ready(function () {
 
 
     })
-
+    //Funcion para mostrar la cortina gris de un anuncio al hacer click
     $('.cortinaGris').on("click",function () {
-
         $(".Anuncio").css("background-color"," rgba(252, 181, 0, 0.1)");
         $(".Anuncio").css("position","static");
         $(".Anuncio").css("width","25%");

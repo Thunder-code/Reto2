@@ -18,7 +18,7 @@
     return $cla;
 
 }*/
-
+//Cogemos todos los anuncios filtrados
 function selectAnuncioInicial($dbh,$titulo,$categoria,$subcategoria,$empresa){
 echo $titulo;
 echo $categoria;

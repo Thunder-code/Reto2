@@ -15,8 +15,10 @@ $dbh = connect();
 
 
   ?>
+<!-- Div gris que aparece al darle click en un anuncio -->
 <div class="cortinaGris"></div>
     <div class="contenedor">
+        <!-- Cargamos todos los anuncios que hay en la base de datos -->
         <?php selectAnuncioInicial($dbh); ?>
     </div>
 
