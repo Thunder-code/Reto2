@@ -7,7 +7,8 @@ if(isset($_POST["idCategoria"])){
     $dbh = connect();
     $subCategorias = selectSubcategorias($dbh,$_POST["idCategoria"]);
 
-    echo "<option>--Elige una Categoria--</option>";
+    $html = $html . "<option></option>";
+
     foreach ($subCategorias as $row) {
         $html= $html."<option value='" . $row["idSubcategoria"] . "'>" . $row["nomSubcategoria"] . "</option>";
     }

@@ -6,8 +6,7 @@ footer{
     top: 100%;
     color: #bfbfbf;
     font-size: 15px;
-    position: absolute;
-
+    position: relative;
 }
 
 .contact p, .about p, .corporativas p{
