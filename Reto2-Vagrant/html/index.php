@@ -19,11 +19,28 @@ $dbh = connect();
 <div class="cortinaGris"></div>
     <div class="contenedor">
         <!-- Cargamos todos los anuncios que hay en la base de datos -->
-        <?php selectAnuncioInicial($dbh); ?>
+        <?php
+            $anuncios = selectAnuncioInicial1($dbh);
+            foreach ($anuncios as $row) {
+                echo "<div class='Anuncio'>
+                        <div class='contenedorinformacion'>
+                            <h2 class='tituloAnuncio'>" . $row["titulo"] . "</h2>
+                            <div class='oculto'>
+                                <div class='descripcion'>" . $row["descripcion"] . "</div>
+                                <div class='nomCategoria'>" . $row["nomCategoria"] . "</div>
+                                <div class='nomEmpresa'>" . $row["nomEmpresa"] . "</div>
+                                <div class='nomSubcategoria'>" . $row["nomSubcategoria"] . "</div>
+                            </div>
+        
+                        </div>
+                        <div class='imgAnuncio'><img src='../../imagenes/" . $row["imagen"] . "'></div>
+                    </div>";
+            }
+        ?>
     </div>
 
 <?php
-require "footer.php";
+require_once "footer.php";
 ?>
 
 

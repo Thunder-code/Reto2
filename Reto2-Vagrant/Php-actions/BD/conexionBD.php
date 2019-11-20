@@ -4,8 +4,8 @@
 function connect(){
     $dbname="reto2";
     $host="localhost";
-    $user="root";
-    $pass="";
+    $user="thunder";
+    $pass="12345";
     try {
         #MySQL
         $dbh = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
