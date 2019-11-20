@@ -2,11 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7039a936-705a-465d-8c9b-a6a5e28f3d27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
+      <change afterPath="$PROJECT_DIR$/CSS/aboutus.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/aboutus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Php-actions/BD/anuncio.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/BD/anuncio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/BD/conexionBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/BD/conexionBD.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/llenarSubcategorias.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/BD/anuncio.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/BD/anuncio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/BD/categorias.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/BD/categorias.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/BD/subcategoria.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/BD/subcategoria.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/BD/usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/BD/usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroAnuncio/comprobarRegistro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroAnuncio/comprobarRegistro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroAnuncio/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroAnuncio/anuncioRegistrado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroAnuncio/registro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroAnuncio/registroAnuncio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroEmpresa/comprobarRegistro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroEmpresa/comprobarRegistro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroEmpresa/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroEmpresa/empresaRegistrado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroUsuario/comprobarRegistro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroUsuario/comprobarRegistro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroUsuario/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroUsuario/usuarioRegistrado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/RegistroUsuario/registro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/RegistroUsuario/resgitroUsuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/conexionBD.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/login-action.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/login-action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pruebas imagen/grabar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pruebas imagen/leer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pruebas imagen/mostrar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pruebas imagen/pruebaImagen.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/login.php" afterDir="false" />
+
+
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,14 +53,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
-        <option value="JavaScript File" />
+
         <option value="CSS File" />
+        <option value="JavaScript File" />
+
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+
   <component name="PhpDebugGeneral" break_at_first_line="true" />
   <component name="PhpServers">
     <servers>
@@ -41,6 +74,7 @@
       </server>
     </servers>
   </component>
+
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="Remote PHP 7.2" />
   <component name="ProjectId" id="1TSeasmymmoGenexRZ3IHyXKFXy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -52,10 +86,12 @@
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
+
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Php-actions" />
       <recent name="$PROJECT_DIR$/Php-actions/BD" />
     </key>
+
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -99,10 +135,14 @@
       <workItem from="1573717603937" duration="10329000" />
       <workItem from="1573802526204" duration="10105000" />
       <workItem from="1573819520785" duration="1003000" />
+
       <workItem from="1574065194906" duration="11481000" />
       <workItem from="1574148010216" duration="14264000" />
       <workItem from="1574200069533" duration="19000" />
       <workItem from="1574200090875" duration="901000" />
+
+      <workItem from="1574234343216" duration="7449000" />
+
     </task>
     <servers />
   </component>

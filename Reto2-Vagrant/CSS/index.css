@@ -3,9 +3,9 @@
 }
 
 .Anuncio{
-    border: 1px solid var(--thundercode-primary-color);
+    border: 1px solid var(--thundercode-secondary-color);
     background-color:rgba(252, 181, 0, 0.1) ;
-    width: 25%;
+    width: 20%;
     margin: 10px;
     border-radius: 5px;
     display: flex;
@@ -13,19 +13,28 @@
     align-items: center;
     flex-direction: column;
     padding: 5px;
+}
 
+.Anuncio:hover{
+    border: 1px solid var(--thundercode-primary-color);
+    background-color:rgba(252, 181, 0, 0.2) ;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
+    cursor: pointer;
+    color: var(--thundercode-primary-color);
 }
 .contenedorinformacion{
-    height: 15%;
+    height: 30%;
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    padding: 15px;
 
 }
 .imgAnuncio{
-    height: 85%;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -39,21 +48,92 @@
 }
 
 .imgAnuncio img{
-    min-width: 50%;
-    max-width: 85%;
+    min-width: 40%;
     height: auto;
 }
 
+
 .oculto{
 
-    visibility: hidden;
+   display: none;
 }
+.descripcion{
+    width: 500px;
+    height: 100px;
+    flex-direction: column;
+    display: flex;
+    border-bottom: 1px solid var(--thundercode-secondary-color);
+    padding: 10px;
+    overflow: auto;
+
+}
+.descripcion:hover {
+    background-color:rgba(252, 181, 0, 0.1) ;
+
+}
+.nomCategoria:hover {
+    background-color:rgba(252, 181, 0, 0.1) ;
+}
+.nomEmpresa:hover {
+    background-color:rgba(252, 181, 0, 0.1) ;
+}  .nomSubcategoria:hover {
+    background-color:rgba(252, 181, 0, 0.1) ;
+}
+.telefono:hover {
+    background-color:rgba(252, 181, 0, 0.1) ;
+}
+.email:hover {
+    background-color:rgba(252, 181, 0, 0.1) ;
+}
+   .telefono{
+       width: 500px;
+       flex-direction: column;
+       display: flex;
+       border-bottom: 1px solid var(--thundercode-secondary-color);
+       padding: 10px;
+   }
+
+   .email{
+       width: 500px;
+       flex-direction: column;
+       display: flex;
+       border-bottom: 1px solid var(--thundercode-secondary-color);
+       padding: 10px;
+   }
+
+.nomCategoria{
+    width: 500px;
+    flex-direction: column;
+    display: flex;
+    border-bottom: 1px solid var(--thundercode-secondary-color);
+    padding: 10px;
+}
+
+.nomEmpresa{
+    width: 500px;
+    flex-direction: column;
+    display: flex;
+    border-bottom: 1px solid var(--thundercode-secondary-color);
+    padding: 10px;
+}
+.nomSubcategoria{
+    width: 500px;
+    flex-direction: column;
+    display: flex;
+    border-bottom: 1px solid var(--thundercode-secondary-color);
+    padding: 10px;
+}
+
 
 .cortinaGris{
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     margin-top: -100px;
     display:none;
+
+}
+h2{
+    padding: 10px;
 }

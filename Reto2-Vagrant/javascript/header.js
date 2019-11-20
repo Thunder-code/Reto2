@@ -28,6 +28,17 @@ function hideSubMenu(el){
 
 function cambiarVentana() {
     window.close();
-    window.open("login.php")
+    window.open("../html/login.php")
+
+
+}
+function cambiaraAnuncio() {
+    window.close();
+    window.open("../Php-actions/RegistroAnuncio/registroAnuncio.php")
+}
+function cambiaraMiperfil(){
+    window.close();
+    window.open("../Php-actions/DatosUsuario/datosUsuario.php")
+
 
 }
