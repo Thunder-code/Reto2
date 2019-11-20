@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7039a936-705a-465d-8c9b-a6a5e28f3d27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CSS/aboutus.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/aboutus.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Php-actions/BD/anuncio.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/BD/anuncio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Php-actions/BD/conexionBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/BD/conexionBD.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/index.js" afterDir="false" />
     </list>
@@ -103,6 +108,7 @@
       <workItem from="1574148010216" duration="14264000" />
       <workItem from="1574200069533" duration="19000" />
       <workItem from="1574200090875" duration="901000" />
+      <workItem from="1574234343216" duration="7449000" />
     </task>
     <servers />
   </component>

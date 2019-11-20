@@ -9,7 +9,7 @@ function insertAnuncio($dbh,$titulo,$descripcion,$categoria,$nombreFoto){
 //Carga inicial de anuncions en la pagina principal
 function selectAnuncioInicial($dbh){
     //seleccionamos todos los atributos del anuncio
-    $stmt = $dbh->prepare("select a.idAnuncio,a.titulo,a.descripcion,a.imagen,c.nomCategoria,e.nomEmpresa,s.nomSubcategoria
+    $stmt = $dbh->prepare("select a.idAnuncio,a.titulo,a.descripcion,a.imagen,c.nomCategoria,e.nomEmpresa,s.nomSubcategoria, e.telefono, e.email
                            From Anuncio as a
                            Inner join Empresa as e on a.idEmpresa = e.idEmpresa 
                            Inner join Categoria as c on a.idCategoria = c.idCategoria 
@@ -22,14 +22,18 @@ function selectAnuncioInicial($dbh){
         <div class='contenedorinformacion'>
             <h2 class='tituloAnuncio'>" . $row->titulo . "</h2>
                <div class='oculto'>
-                    <div class='descripcion'>" . $row->descripcion . "</div>
-                    <div class='nomCategoria'>" . $row->nomCategoria . "</div>
-                    <div class='nomEmpresa'>" . $row->nomEmpresa . "</div>
-                    <div class='nomSubcategoria'>" . $row->nomSubcategoria . "</div>
+                    <div class='nomEmpresa'>" . "<p> Empresa: </p>" .  $row->nomEmpresa . "</div>
+                    <div class='nomCategoria'>" . "<p> Categoria: </p>" .  $row->nomCategoria . "</div>
+                    <div class='nomSubcategoria'>". "<p> Subcategoria: . </p>" .  $row->nomSubcategoria . "</div>
+                     <div class='telefono'>" . "<p> Telefono: </p>" .  $row->telefono . "</div>
+                      <div class='email'>" . "<p> Email: </p>" .  $row->email . "</div>
+                       <div class='descripcion'>" . "<p> Descripcion: </p>" .  $row->descripcion . "</div>
+                   
+                   
                </div>
         
         </div>
-               <div class='imgAnuncio'><img src='../../imagenes/" . $row->imagen . "'></div>
+               <div class='imgAnuncio'><img   class='imagen' src='../../imagenes/" . $row->imagen . "'></div>
          </div>";
     }
 }
