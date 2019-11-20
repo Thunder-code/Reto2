@@ -1,7 +1,3 @@
-
-
-
-
 <html>
     <head>
        <!-- <link rel="stylesheet" href="/CSS/normalize.css">-->
@@ -18,6 +14,7 @@
     <body>
 
     <?php
+    //Funcion para escribir el mensaje de error en caso de fallar el inicio de sesion
     function mensajeLogin($isLoginIncorrecto){
         if ($isLoginIncorrecto == true){
             $mensaje = "Datos Incorrectos";

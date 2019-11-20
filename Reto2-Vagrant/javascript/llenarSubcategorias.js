@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    //Funcion para llenar el combobox de categorias
     $("#categorias").on("change", function() {
         $("#categorias option:selected").each(function () {
             let idCategoria = $(this).val();

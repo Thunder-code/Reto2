@@ -6,7 +6,7 @@ require ("../BD/categorias.php");
 $dbh = connect();
 $categorias = selectCategorias($dbh);
 
-
+//Funcion para llenar el combobox de categorias
 function llenarCategorias($categorias)
 {
     echo "<option></option>";

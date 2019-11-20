@@ -1,9 +1,4 @@
 <?php
-
-include "conexionBD.php";
-$dbh = connect();
-insertSubcategoria($dbh);
-
 function insertSubcategoria($dbh){
     $data = array('nomSubcat' => 'Furgonetas','idCat' => '3');
 
@@ -16,7 +11,7 @@ function insertSubcategoria($dbh){
 function selectSubcategorias ($dbh,$idCategoria){
     $data = array('idcategoria' => $idCategoria);
 
-    $stmt = $dbh->prepare("SELECT idSubcategoria,nomCategoria FROM Subcategoria
+    $stmt = $dbh->prepare("SELECT idSubcategoria,nomSubcategoria FROM Subcategoria
                            WHERE idCategoria = (SELECT idCategoria FROM Categoria
                                                 WHERE idCategoria = :idcategoria)");
     $stmt->execute($data);

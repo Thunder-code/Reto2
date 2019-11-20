@@ -1,3 +1,5 @@
+
+//Menu dinamico del header
 [].slice.call(document.querySelectorAll('.dropdown .nav-link')).forEach(function(el){
     el.addEventListener('click', onClick, false);
 });
@@ -27,5 +29,14 @@ function hideSubMenu(el){
 function cambiarVentana() {
     window.close();
     window.open("login.php")
+
+}
+function cambiaraAnuncio() {
+    window.close();
+    window.open("../Php-actions/RegistroAnuncio/registroAnuncio.php")
+}
+function cambiaraMiperfil(){
+    window.close();
+    window.open("../Php-actions/DatosUsuario/datosUsuario.php")
 
 }

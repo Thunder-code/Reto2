@@ -4,7 +4,7 @@ $tipo ="";
 
 $usuario = $_POST["usuario"];
 $password = $_POST["password"];
-
+//Funcion para comprobar los datos del login con la base de datos
 function comprobarLogin ($dbh, $usuario,$password){
     $data = array("usuario" => $usuario,
                   "password" => $password);

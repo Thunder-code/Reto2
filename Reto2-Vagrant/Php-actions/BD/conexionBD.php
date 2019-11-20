@@ -1,4 +1,6 @@
 <?php
+
+//Conexion a la base de datos
 function connect(){
     $dbname="reto2";
     $host="localhost";
