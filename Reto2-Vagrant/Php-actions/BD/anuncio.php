@@ -1,9 +1,9 @@
 <?php
 //Funcion para insertar un anuncio
-function insertAnuncio($dbh,$titulo,$descripcion,$categoria,$nombreFoto){
-    $data = array('descripcion' => $descripcion, 'titulo'=> $titulo,'idempresa' => '1', 'idcategoria' => $categoria,'imagen' => $nombreFoto);
+function insertAnuncio($dbh,$titulo,$descripcion,$categoria,$subcategoria,$nombreFoto){
+    $data = array('descripcion' => $descripcion, 'titulo'=> $titulo,'idempresa' => '1', 'idcategoria' => $categoria,'subcategoria' => $subcategoria,'imagen' => $nombreFoto);
     print_r($data);
-    $stmt = $dbh->prepare("INSERT INTO Anuncio (imagen,titulo,descripcion,idEmpresa,idCategoria) VALUES (:imagen,:titulo,:descripcion,:idempresa,:idcategoria)") ;
+    $stmt = $dbh->prepare("INSERT INTO Anuncio (imagen,titulo,descripcion,idEmpresa,idCategoria,idSubcategoria) VALUES (:imagen,:titulo,:descripcion,:idempresa,:idcategoria,:subcategoria)") ;
     $stmt->execute($data);
 }
 //Carga inicial de anuncions en la pagina principal

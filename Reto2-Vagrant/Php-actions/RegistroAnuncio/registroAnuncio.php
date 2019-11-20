@@ -1,16 +1,17 @@
 <?php
 require("../llenarCB/llenarCBCategorias.php");
+include "../../html/header.php";
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
+
     <meta charset="UTF-8">
-    <title>registroAnuncio.php</title>
+    <script src="../../javascript/jquery-3.4.1.min.js"></script>
+    <script src="../../javascript/llenarSubcategorias.js"></script>
     <link rel="stylesheet" href="../../CSS/registro-anuncio.css">
     <link rel="stylesheet" href="../../CSS/global.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../../CSS/header.css">
+
+
 <div class="contenedor">
 <div id="formuAnuncio">
     <form action="comprobarRegistro.php" class="cFormulario" method="post" enctype='multipart/form-data'>
@@ -21,13 +22,16 @@ require("../llenarCB/llenarCBCategorias.php");
           <input type="file" name="imagen" placeholder="Imagen">
         </div>
 
-            <select name="categoria">
-                <?php llenarCategorias($categorias)?>
-            </select>
+        <p>Categoria: </p>
+        <select name="categoria" id="categorias">
+            <?php llenarCategorias($categorias)?>
+        </select>
         <br>
         <br>
+        <p>Subcategoria: </p>
+        <select name="subcategoria" id="subcategorias">
+        </select>
 
-        <p> Subcategoria </p><input type="text" name="subCategoria" id="subcategoria" disabled>
         <br>
         <br>
         <input type="submit" name="publicar" value="Publicar">

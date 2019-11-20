@@ -14,7 +14,7 @@ $nuevaRuta = "../../imagenes/" . $nombreFoto;
 move_uploaded_file($rutafototemporal,$nuevaRuta);
 
 
-    insertAnuncio($dbh, $_POST["titulo"], $_POST["descripcion"],$_POST["categoria"],$nombreFoto);
+    insertAnuncio($dbh, $_POST["titulo"], $_POST["descripcion"],$_POST["categoria"],$_POST["subcategoria"],$nombreFoto);
     include "anuncioRegistrado.php";
 }
 ?>
