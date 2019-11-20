@@ -1,4 +1,6 @@
 <?php
+session_start();
+$usuarioSesion = $_SESSION['registro'];
 //Funcion para insertar usuario a la base de datos
 function insertUsuario($dbh,$username,$pass){
     $data = array('username' => $username, 'pwd' => $pass);
@@ -8,10 +10,10 @@ function insertUsuario($dbh,$username,$pass){
     $stmt->execute($data);
 }
 //Funcion para actualizar usuario en la base de datos
-function updateUsuario($dbh,$nomempresa){
-    $data = array('nomempre' => $nomempresa);
+function updateUsuario($dbh,$usuarioSesion,$nomempresa){
+    $data = array('nomusu' => $usuarioSesion,'nomempresa' => $nomempresa);
 
-    $stmt = $dbh->prepare(" UPDATE Usuario SET idEmpresa = (SELECT idEmpresa FROM Empresa WHERE nomEmpresa = :nomempre)");
+    $stmt = $dbh->prepare("UPDATE Usuario SET idEmpresa = (SELECT idEmpresa FROM Empresa WHERE nomEmpresa = :nomempresa) where nomUsuario = :nomusu");
     $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute($data);
 

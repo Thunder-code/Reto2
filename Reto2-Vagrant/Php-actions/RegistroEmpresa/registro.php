@@ -9,6 +9,11 @@
 <body>
     <div class="contenedor">
     <div id="formuEmpresa" class="cFormulario">
+        <div>
+            <?php session_start();
+            echo $_SESSION['registro'];
+            ?>
+        </div>
       <form action="comprobarRegistro.php" method="get">
           <div class="tituloFormulario"> <h2>Registra tu empresa</h2></div>
 
@@ -22,6 +27,7 @@
         <div class="botonFormulario">
              <input type="submit" name="empresa" value="Registrar Empresa">
         </div>
+
       </form>
     </div>
 </div>

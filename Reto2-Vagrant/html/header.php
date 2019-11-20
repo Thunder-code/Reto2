@@ -23,9 +23,9 @@
                 <ul class="submenu-items">
                     <li class="submenu-item"><a href="#" class="submenu-link">Ver Anuncios</a></li>
                     <li class="submenu-item"><a href="#" class="submenu-link" onclick="cambiaraAnuncio()">Publicar Anuncios</a></li>
-                  
                     <li class="submenu-item"><a href="#" class="submenu-link">Borrar Anuncios</a></li>
                     <li class="submenu-item"><a href="#" class="submenu-link">Editar Anuncios</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link" onclick="cambiaraEmpresa()">Añadir Empresa</a></li>
                 </ul>
             </nav>
         </li>
