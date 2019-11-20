@@ -66,7 +66,7 @@ echo $empresa;
         echo "<div class='Anuncio'>
          <h2 class='tituloAnuncio'>" . $row->titulo . "</h2>
          <div class='descripcion'>" . $row->descripcion . "</div>
-         <p class='imgAnuncio'><img src='" . $row->imagen . "'></p>
+         <p class='imgAnuncio'><img src='../../imagenes/" . $row->imagen . "'></p>
          <div class='categoria'>" . $row->nomCategoria . "</div>
          <div class='empresa'>" . $row->nomEmpresa . "</div>
          <div class='subcategoria'>" . $row->nomSubcategoria . "</div>
