@@ -7,31 +7,16 @@ function insertAnuncio($dbh,$titulo,$descripcion,$categoria,$nombreFoto){
     $stmt->execute($data);
 }
 //Carga inicial de anuncions en la pagina principal
-function selectAnuncioInicial($dbh){
+function selectAnuncioInicial1($dbh){
     //seleccionamos todos los atributos del anuncio
     $stmt = $dbh->prepare("select a.idAnuncio,a.titulo,a.descripcion,a.imagen,c.nomCategoria,e.nomEmpresa,s.nomSubcategoria
                            From Anuncio as a
                            Inner join Empresa as e on a.idEmpresa = e.idEmpresa 
                            Inner join Categoria as c on a.idCategoria = c.idCategoria 
                            LEFT join Subcategoria as s on a.idSubcategoria = s.idSubcategoria");
-    $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute();
-
-    while ($row = $stmt->fetch()) {
-        echo "<div class='Anuncio'>
-        <div class='contenedorinformacion'>
-            <h2 class='tituloAnuncio'>" . $row->titulo . "</h2>
-               <div class='oculto'>
-                    <div class='descripcion'>" . $row->descripcion . "</div>
-                    <div class='nomCategoria'>" . $row->nomCategoria . "</div>
-                    <div class='nomEmpresa'>" . $row->nomEmpresa . "</div>
-                    <div class='nomSubcategoria'>" . $row->nomSubcategoria . "</div>
-               </div>
-        
-        </div>
-               <div class='imgAnuncio'><img src='../../imagenes/" . $row->imagen . "'></div>
-         </div>";
-    }
+    $array = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $array;
 }
 //Selecionamos los anuncios que nos llegan de los filtros
 function selectAnuncioFiltrado($dbh){
@@ -56,7 +41,6 @@ function selectAnuncioFiltrado($dbh){
     }
     echo "</div>";
 }
-
 function deleteAnuncio ($dbh,$idanuncio){
     $data = array('idanuncio' => $idanuncio);
     $stmt = $dbh->prepare("delete from Anuncio Where idAnuncio = :idAnuncio");

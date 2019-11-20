@@ -18,9 +18,9 @@ function updateUsuario($dbh,$nomempresa){
 }
 //Funcion para mostar los datos del usuario con la respectiva empresa
 function datosUsuario ($dbh){
- /*   $nomusuario = 'usu1';
-    echo $nomusuario;
-    $data = array('nomusuario' => $nomusuario);*/
+    /*   $nomusuario = 'usu1';
+       echo $nomusuario;
+       $data = array('nomusuario' => $nomusuario);*/
 
     $stmt = $dbh->prepare("Select u.idUsuario, u.nomUsuario,u.password,u.idEmpresa,e.nomEmpresa,e.telefono,e.email,e.direccion 
                                      FROM Usuario as u 
@@ -39,17 +39,6 @@ function datosUsuario ($dbh){
          </div>";
     }
     echo "</div>";
-
-
-
-
-
 }
-
-
-    
-    
-    
-
 
 ?>

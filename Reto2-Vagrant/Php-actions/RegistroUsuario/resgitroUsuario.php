@@ -40,7 +40,7 @@ function registroMal($username,$pass,$malRegistro)
                 </div>
               <?php  if ($malRegistro == true) {
                 if ($username == false) {
-                    echo "<div class='mensajeError'>" . "<p>" . registroMal( $username,$pass, $malRegistro). "</p>". " </div>";
+                    echo "<div class='mensajeError'>" . "<p>" .  registroMal( $username,$pass, $malRegistro). "</p>". " </div>";
                 } elseif ($pass == false) {
                     echo "<div class='mensajeError'>" . "<p>" . registroMal($username,$pass, $malRegistro) . "</p>". " </div>";
                 }
