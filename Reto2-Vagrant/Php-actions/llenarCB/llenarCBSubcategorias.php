@@ -1,6 +1,6 @@
 <?php
-require_once "../BD/conexionBD.php";
-require "../BD/subcategoria.php";
+require_once "../Php-actions/BD/conexionBD.php";
+require_once "../BD/subcategoria.php";
 //Funcion para llenar el combobox de subcategorias
 if(isset($_POST["idCategoria"])){
     $html= "";
