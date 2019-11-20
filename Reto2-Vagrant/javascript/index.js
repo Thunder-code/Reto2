@@ -8,11 +8,11 @@ $(document).ready(function () {
         $(this).find(".oculto").removeClass('oculto');
            $(this).css("background-color","white");
            $(this).css("position","fixed");
-           $(this).css("width","85%");
-           $(this).css("width","65%");
-          $(this).css("top","5%");
+           $(this).css("width","50%");
+          $(this).css("transition","all 0.3s ease-out")
+          $(".cortinaGris").css("display","block");
 
-           $(".cortinaGris").css("display","block");
+
 
 
     })
@@ -20,11 +20,11 @@ $(document).ready(function () {
     $('.cortinaGris').on("click",function () {
         $(".Anuncio").css("background-color"," rgba(252, 181, 0, 0.1)");
         $(".Anuncio").css("position","static");
-        $(".Anuncio").css("width","25%");
+        $(".Anuncio").css("width","20%");
         $(".Anuncio").css("height","auto");
+        $(".Anuncio").css("transition","all 0s ease-out")
         $(".Anuncio").find(".visible").addClass('oculto');
         $(".cortinaGris").css("display","none");
-
 
 
     })
