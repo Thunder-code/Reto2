@@ -8,7 +8,7 @@ CREATE TABLE `Usuario` (
 
 CREATE TABLE `Anuncio` (
 	`idAnuncio` INT NOT NULL AUTO_INCREMENT,
-	`imagen` blob,
+	`imagen` TEXT(100),
 	`titulo` TEXT(25) NOT NULL,
 	`descripcion` TEXT(300) NOT NULL,
 	`idSubcategoria` INT,
@@ -44,6 +44,7 @@ ALTER TABLE `Usuario` ADD CONSTRAINT `Usuario_fk0` FOREIGN KEY (`idEmpresa`) REF
 ALTER TABLE `Anuncio` ADD CONSTRAINT `Anuncio_fk0` FOREIGN KEY (`idEmpresa`) REFERENCES `Empresa`(`idEmpresa`);
 
 ALTER TABLE `Anuncio` ADD CONSTRAINT `Anuncio_fk1` FOREIGN KEY (`idCategoria`) REFERENCES `Categoria`(`idCategoria`);
+
 
 ALTER TABLE `Subcategoria` ADD CONSTRAINT `Subcategoria_fk0` FOREIGN KEY (`idCategoria`) REFERENCES `Categoria`(`idCategoria`);
 

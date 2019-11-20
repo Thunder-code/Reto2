@@ -23,6 +23,7 @@
                 <ul class="submenu-items">
                     <li class="submenu-item"><a href="#" class="submenu-link">Ver Anuncios</a></li>
                     <li class="submenu-item"><a href="#" class="submenu-link" onclick="cambiaraAnuncio()">Publicar Anuncios</a></li>
+                  
                     <li class="submenu-item"><a href="#" class="submenu-link">Borrar Anuncios</a></li>
                     <li class="submenu-item"><a href="#" class="submenu-link">Editar Anuncios</a></li>
                 </ul>
@@ -30,7 +31,9 @@
         </li>
 
         <li class="nav-item">
+
             <a href="#" class="nav-link" onclick="cambiaraMiperfil()"><span>Perfil</span></a>
+
         </li>
         <li class="nav-item dropdown">
             <a href="#" class="nav-link" id="gear"><span><img src="../multimedia/gear.png"></span></a>

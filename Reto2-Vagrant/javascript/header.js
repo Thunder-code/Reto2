@@ -30,6 +30,7 @@ function cambiarVentana() {
     window.close();
     window.open("login.php")
 
+
 }
 function cambiaraAnuncio() {
     window.close();
@@ -38,5 +39,6 @@ function cambiaraAnuncio() {
 function cambiaraMiperfil(){
     window.close();
     window.open("../Php-actions/DatosUsuario/datosUsuario.php")
+
 
 }

@@ -16,6 +16,7 @@ function updateUsuario($dbh,$nomempresa){
     $stmt->execute($data);
 
 }
+
 //Funcion para mostar los datos del usuario con la respectiva empresa
 function datosUsuario ($dbh){
     /*   $nomusuario = 'usu1';
@@ -40,5 +41,6 @@ function datosUsuario ($dbh){
     }
     echo "</div>";
 }
+
 
 ?>
