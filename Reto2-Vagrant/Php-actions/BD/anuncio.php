@@ -7,7 +7,8 @@ function insertAnuncio($dbh,$titulo,$descripcion,$categoria,$nombreFoto){
     $stmt->execute($data);
 }
 //Carga inicial de anuncions en la pagina principal
-function selectAnuncioInicial1($dbh){
+function selectAnuncioInicial1($dbh)
+{
     //seleccionamos todos los atributos del anuncio
     $stmt = $dbh->prepare("select a.idAnuncio,a.titulo,a.descripcion,a.imagen,c.nomCategoria,e.nomEmpresa,s.nomSubcategoria, e.telefono, e.email
                            From Anuncio as a
@@ -15,26 +16,8 @@ function selectAnuncioInicial1($dbh){
                            Inner join Categoria as c on a.idCategoria = c.idCategoria 
                            LEFT join Subcategoria as s on a.idSubcategoria = s.idSubcategoria");
     $stmt->execute();
-
-    while ($row = $stmt->fetch()) {
-        echo "<div class='Anuncio'>
-        <div class='contenedorinformacion'>
-            <h2 class='tituloAnuncio'>" . $row->titulo . "</h2>
-               <div class='oculto'>
-                    <div class='nomEmpresa'>" . "<p> Empresa: </p>" .  $row->nomEmpresa . "</div>
-                    <div class='nomCategoria'>" . "<p> Categoria: </p>" .  $row->nomCategoria . "</div>
-                    <div class='nomSubcategoria'>". "<p> Subcategoria: . </p>" .  $row->nomSubcategoria . "</div>
-                     <div class='telefono'>" . "<p> Telefono: </p>" .  $row->telefono . "</div>
-                      <div class='email'>" . "<p> Email: </p>" .  $row->email . "</div>
-                       <div class='descripcion'>" . "<p> Descripcion: </p>" .  $row->descripcion . "</div>
-                   
-                   
-               </div>
-        
-        </div>
-               <div class='imgAnuncio'><img   class='imagen' src='../../imagenes/" . $row->imagen . "'></div>
-         </div>";
-    }
+    $array = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $array;
 }
 //Selecionamos los anuncios que nos llegan de los filtros
 function selectAnuncioFiltrado($dbh){
