@@ -5,6 +5,6 @@
     <title>index.php</title>
 </head>
 <body>
-<p>El anuncio se ha creado</p>
+<p>El anuncio se ha creado correctamente</p>
 </body>
 </html>

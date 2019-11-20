@@ -7,14 +7,13 @@ function insertAnuncio($dbh,$titulo,$descripcion,$categoria,$nombreFoto){
     $stmt->execute($data);
 }
 //Carga inicial de anuncions en la pagina principal
-function selectAnuncioInicial($dbh){
+function selectAnuncioInicial1($dbh){
     //seleccionamos todos los atributos del anuncio
     $stmt = $dbh->prepare("select a.idAnuncio,a.titulo,a.descripcion,a.imagen,c.nomCategoria,e.nomEmpresa,s.nomSubcategoria, e.telefono, e.email
                            From Anuncio as a
                            Inner join Empresa as e on a.idEmpresa = e.idEmpresa 
                            Inner join Categoria as c on a.idCategoria = c.idCategoria 
                            LEFT join Subcategoria as s on a.idSubcategoria = s.idSubcategoria");
-    $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute();
 
     while ($row = $stmt->fetch()) {

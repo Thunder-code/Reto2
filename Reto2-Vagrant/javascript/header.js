@@ -30,4 +30,15 @@ function cambiarVentana() {
     window.close();
     window.open("login.php")
 
+
+}
+function cambiaraAnuncio() {
+    window.close();
+    window.open("../Php-actions/RegistroAnuncio/registroAnuncio.php")
+}
+function cambiaraMiperfil(){
+    window.close();
+    window.open("../Php-actions/DatosUsuario/datosUsuario.php")
+
+
 }
