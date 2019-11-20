@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 5; }
+.div2 { grid-area: 2 / 1 / 5 / 3; }
+.div3 { grid-area: 5 / 1 / 6 / 5; }
+.div4 { grid-area: 2 / 3 / 5 / 5; }
+
+.div1,.div2,.div3,.div4{
+
+    background-color: rgba(222, 227, 222, 0.52);
+    padding: 20px;
+    border:1px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    color: #707070;
+
+}
+
+.div4{
+    background-image: url("../multimedia/ThunderCode.png");
+    background-size: cover;
+}
+
+.container{
+
+    width: 70vw;
+    height: 80vh;
+}
+
+p{
+    font-size: 20px;
+}

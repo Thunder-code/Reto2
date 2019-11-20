@@ -28,7 +28,7 @@ function hideSubMenu(el){
 
 function cambiarVentana() {
     window.close();
-    window.open("login.php")
+    window.open("../html/login.php")
 
 
 }

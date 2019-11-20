@@ -26,10 +26,10 @@ $dbh = connect();
                         <div class='contenedorinformacion'>
                             <h2 class='tituloAnuncio'>" . $row["titulo"] . "</h2>
                             <div class='oculto'>
-                                <div class='descripcion'>" . $row["descripcion"] . "</div>
-                                <div class='nomCategoria'>" . $row["nomCategoria"] . "</div>
-                                <div class='nomEmpresa'>" . $row["nomEmpresa"] . "</div>
-                                <div class='nomSubcategoria'>" . $row["nomSubcategoria"] . "</div>
+                              <div class='descripcion'>"  . "<p> Descripcion: </p>" . $row["descripcion"] . "</div>
+                              <div class='nomCategoria'>" . "<p> Categoria: </p>" . $row["nomCategoria"] . "</div>
+                              <div class='nomEmpresa'>" . "<p> Empresa: </p>" . $row["nomEmpresa"] . "</div>
+                              <div class='nomSubcategoria'>" . "<p> Subcategoria </p>" . $row["nomSubcategoria"] . "</div>
                             </div>
         
                         </div>
