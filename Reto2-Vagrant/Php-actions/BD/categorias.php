@@ -1,4 +1,6 @@
 <?php
+//funcion para insertar Categoria
+
 function insert($dbh){
     $data = array('nomCat' => 'Motor');
 
@@ -6,7 +8,7 @@ function insert($dbh){
     $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute($data);
 }
-
+//funcion para coger el id y el nombre de la Categoria
 function selectCategorias ($dbh){
     $stmt = $dbh->prepare("SELECT idCategoria,nomCategoria FROM Categoria");
     $stmt->execute();

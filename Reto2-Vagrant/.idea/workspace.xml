@@ -47,7 +47,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Proyectos php/Reto2-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
@@ -101,6 +101,8 @@
       <workItem from="1573819520785" duration="1003000" />
       <workItem from="1574065194906" duration="11481000" />
       <workItem from="1574148010216" duration="14264000" />
+      <workItem from="1574200069533" duration="19000" />
+      <workItem from="1574200090875" duration="901000" />
     </task>
     <servers />
   </component>
