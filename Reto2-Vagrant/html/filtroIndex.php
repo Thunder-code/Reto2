@@ -1,8 +1,10 @@
 <script src="../javascript/jquery-3.4.1.min.js"></script>
 <script src="../javascript/index.js"></script>
 <script src="../javascript/login.js"></script>
+<script src="../javascript/filtros.js"></script>
 <link rel="stylesheet" href="../CSS/index.css">
 <link rel="stylesheet" href="../CSS/global.css">
+<link rel="stylesheet" href="../CSS/filtros.css">
 <?php
 
 

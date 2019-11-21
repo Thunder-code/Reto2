@@ -24,12 +24,8 @@ function selectAllAnuncios($dbh)
 
 function deleteAnuncio ($dbh,$idanuncio){
     $data = array('idanuncio' => $idanuncio);
-    $stmt = $dbh->prepare("delete from Anuncio Where idAnuncio = :idAnuncio");
+    $stmt = $dbh->prepare("delete from Anuncio Where idAnuncio = :idanuncio");
     $stmt->execute($data);
-
-
-
 }
-
 ?>
 

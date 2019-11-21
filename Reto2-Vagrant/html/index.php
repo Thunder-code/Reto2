@@ -36,6 +36,12 @@ $dbh = connect();
                             </div>
                         </div>
                         <div class='imgAnuncio'><img src='../../imagenes/" . $row["imagen"] . "'></div>
+                        
+                        <form action='../Php-actions/BorrarAnuncio/borrar.php' method='post'>
+                            <input type='radio' name='idAnuncio' value='" . $row["idAnuncio"] . "' hidden checked>  
+                            <input type='submit' name='bBorrar' value='Eliminar Anuncio'>
+                        </form>
+                        
                     </div>";
             }
 
