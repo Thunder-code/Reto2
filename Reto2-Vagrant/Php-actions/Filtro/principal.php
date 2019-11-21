@@ -21,7 +21,7 @@ function llenarCategorias($categorias)
         <div id="buscador">
 
             <div class="abrirFiltros"><img src="../../multimedia/menu.png"></div>
-            <form action="../Php-actions/Filtro/comprobarFiltro.php" method="get" id="formFiltro" enctype='multipart/form-data'>
+            <form action="../../html/filtroIndex.php" method="get" id="formFiltro" enctype='multipart/form-data'>
                 <div class="contenedorInputs">
                     <div class="buscadorTitulo">
                      <p>Titulo:
