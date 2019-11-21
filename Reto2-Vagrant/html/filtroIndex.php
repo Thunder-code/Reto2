@@ -1,5 +1,3 @@
-
-
 <script src="../javascript/jquery-3.4.1.min.js"></script>
 <script src="../javascript/index.js"></script>
 <script src="../javascript/login.js"></script>
@@ -10,20 +8,20 @@
 
 require_once "header.php";
 require_once "../Php-actions/BD/conexionBD.php";
-require_once "../Php-actions/BD/anuncio.php";
+require_once "../Php-actions/BD/filtro.php";
 $dbh = connect();
 
 
-  ?>
+?>
 <!-- Div gris que aparece al darle click en un anuncio -->
 <div class="cortinaGris"></div>
 <?php require_once "../Php-actions/Filtro/principal.php"; ?>
-    <div class="contenedor">
-        <!-- Cargamos todos los anuncios que hay en la base de datos -->
-        <?php
-            $anuncios = selectAllAnuncios($dbh);
-            foreach ($anuncios as $row) {
-                echo "<div class='Anuncio'>
+<div class="contenedor">
+    <!-- Cargamos todos los anuncios que hay en la base de datos -->
+    <?php
+    $anunciosFiltrados = selectAnuncioFiltro($dbh,$_GET["buscadorTitulo"], $_GET["categorias"],$_GET["subcategorias"],$_GET["buscadorEmpresa"]);
+    foreach ($anunciosFiltrados as $row) {
+        echo "<div class='Anuncio'>
                         <div class='contenedorinformacion'>
                             <h2 class='tituloAnuncio'>" . $row["titulo"] . "</h2>
                             <div class='oculto'>
@@ -35,16 +33,12 @@ $dbh = connect();
                         </div>
                         <div class='imgAnuncio'><img src='../../imagenes/" . $row["imagen"] . "'></div>
                     </div>";
-            }
+    }
 
 
-        ?>
-    </div>
+    ?>
+</div>
 
 <?php
 require_once "footer.php";
 ?>
-
-
-
-
