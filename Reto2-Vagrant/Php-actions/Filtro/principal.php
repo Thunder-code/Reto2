@@ -19,6 +19,7 @@ function llenarCategorias($categorias)
         <script src="../javascript/llenarSubcategorias.js"></script>
 
         <div id="buscador">
+
             <div class="abrirFiltros"><img src="../../multimedia/menu.png"></div>
             <form action="../Php-actions/Filtro/comprobarFiltro.php" method="get" id="formFiltro" enctype='multipart/form-data'>
                 <div class="contenedorInputs">
@@ -43,6 +44,7 @@ function llenarCategorias($categorias)
                 <div class="boton">
                     <input type="submit" name="botonBuscar" value="Buscar">
                 </div>
+
             </form>
         </div>
 
