@@ -37,7 +37,8 @@ function cambiaraAnuncio() {
     window.open("../Php-actions/RegistroAnuncio/registroAnuncio.php")
 }
 function cambiaraMiperfil(){
-    window.close();
+
+
     window.open("../Php-actions/DatosUsuario/datosUsuario.php")
 }
 function cambiaraEmpresa() {

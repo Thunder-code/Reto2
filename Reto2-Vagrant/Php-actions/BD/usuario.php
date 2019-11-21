@@ -1,6 +1,7 @@
 <?php
 session_start();
-$usuarioSesion = $_SESSION['registro'];
+/*$usuarioSesion = $_SESSION['registro'];
+$nomempresa =  $_SESSION['sesinempresa'];*/
 //Funcion para insertar usuario a la base de datos
 function insertUsuario($dbh,$username,$pass){
     $data = array('username' => $username, 'pwd' => $pass);
@@ -20,16 +21,15 @@ function updateUsuario($dbh,$usuarioSesion,$nomempresa){
 }
 
 //Funcion para mostar los datos del usuario con la respectiva empresa
-function datosUsuario ($dbh){
-    /*   $nomusuario = 'usu1';
-       echo $nomusuario;
-       $data = array('nomusuario' => $nomusuario);*/
+
+function datosUsuario ($dbh,$ususesion){
+    $data = array('ususesion' =>$ususesion);
 
     $stmt = $dbh->prepare("Select u.idUsuario, u.nomUsuario,u.password,u.idEmpresa,e.nomEmpresa,e.telefono,e.email,e.direccion 
                                      FROM Usuario as u 
-                                     LEFT join Empresa as e on u.idEmpresa = e.IdEmpresa where u.nomUsuario = 'usu1'");
+                                     LEFT join Empresa as e on u.idEmpresa = e.IdEmpresa where u.nomUsuario = :ususesion");
     $stmt->setFetchMode(PDO::FETCH_OBJ);
-    $stmt->execute();
+    $stmt->execute($data);
 
     echo "<div class='Usuario'>";
     while ($row = $stmt->fetch()) {

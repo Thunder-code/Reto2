@@ -32,7 +32,7 @@
 
         <li class="nav-item">
 
-            <a href="#" class="nav-link" onclick="cambiaraMiperfil()"><span>Perfil</span></a>
+            <a href="../Php-actions/DatosUsuario/datosUsuario.php" class="nav-link"><span>Perfil</span></a>
 
         </li>
         <li class="nav-item dropdown">

@@ -1,9 +1,16 @@
+<?php
+require_once "../BD/conexionBD.php";
+require_once "../BD/usuario.php";
+/*require_once "../login-action.php";*/
 
 
-    <?php
-    require "../BD/conexionBD.php";
-    require "../BD/usuario.php";
-    $dbh = connect();
 
-    datosUsuario($dbh);
-    ?>
+$dbh = connect();
+session_start();
+datosUsuario($dbh,$_SESSION['registro']);
+
+
+
+
+
+?>

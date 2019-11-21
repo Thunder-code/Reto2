@@ -33,10 +33,13 @@ require_once "BD/conexionBD.php";
 $dbh = connect();
 comprobarLogin($dbh,$usuario,$password);
 
+
 session_start();
 
+
 $_SESSION['registro'] = $usuario;
-echo $_SESSION['registro'];
+echo "Hola" .  isset($_SESSION['registro']) ? $_SESSION['registro']: "nada". "dd";
+
 
 
 ?>
