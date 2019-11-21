@@ -1,12 +1,25 @@
 <?php
-require("../llenarCB/llenarCBCategorias.php");
-include "../../html/header.php";
+
+require_once ("../BD/conexionBD.php");
+require_once ("../BD/categorias.php");
+
+$dbh = connect();
+$categorias = selectCategorias($dbh);
+
+//Funcion para llenar el combobox de categorias
+function llenarCategorias($categorias)
+{
+    echo "<option></option>";
+    foreach ($categorias as $row) {
+        echo("<option value='" . $row["idCategoria"] . "'>" . $row["nomCategoria"] . "</option>");
+    }
+}
 ?>
 
 
     <meta charset="UTF-8">
     <script src="../../javascript/jquery-3.4.1.min.js"></script>
-    <script src="../../javascript/llenarSubcategorias.js"></script>
+    <script src="../../javascript/llenarSubcategorias2.js"></script>
     <link rel="stylesheet" href="../../CSS/registro-anuncio.css">
     <link rel="stylesheet" href="../../CSS/global.css">
     <link rel="stylesheet" href="../../CSS/header.css">

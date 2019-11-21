@@ -14,7 +14,7 @@ require_once "../Php-actions/BD/anuncio.php";
 $dbh = connect();
 
 
-  ?>
+?>
 <!-- Div gris que aparece al darle click en un anuncio -->
 <div class="cortinaGris"></div>
 <?php require_once "../Php-actions/Filtro/principal.php"; ?>
