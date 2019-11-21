@@ -19,7 +19,7 @@ function llenarCategorias($categorias)
         <script src="../javascript/llenarSubcategorias.js"></script>
 
         <div id="buscador">
-            <form action="../Php-actions/Filtro/comprobarFiltro.php" method="get" enctype='multipart/form-data'>
+            <form action="../../html/filtroIndex.php" method="get" enctype='multipart/form-data'>
                 <p>Titulo:
                 <input type="text" name="buscadorTitulo">
 
