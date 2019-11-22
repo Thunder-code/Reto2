@@ -1,8 +1,8 @@
 <html>
     <head>
        <!-- <link rel="stylesheet" href="/CSS/normalize.css">-->
-        <link rel="stylesheet" href="/CSS/global.css">
-        <link rel="stylesheet" href="/CSS/login.css">
+        <link rel="stylesheet" href="../CSS/global.css">
+        <link rel="stylesheet" href="../CSS/login.css">
 
         <script src="../javascript/jquery-3.4.1.min.js"></script>
         <script src="../javascript/login.js"></script>
@@ -32,13 +32,13 @@
 
              <div class="contenedorFormulario" id="cFormulario">
                  <div class="headerFormulario"> <h1>CONTECTATE</h1></div>
-                 <form id="form" action="/Php-actions/login-action.php" method="post">
+                 <form id="form" action="../Php-actions/login-action.php" method="post">
                      <div class="inputsFormulario">
                          <input type="text" id='usuario' name='usuario' placeholder="Usuario">
                          <input type="password" id='password' name='password' placeholder="Contraseña" >
                      </div>
                      <div class="extrasFormulario">
-                         <a href="../Php-actions/RegistroUsuario/resgitroUsuario.php">Registrate</a>
+                         <a href="registroUsuario.php">Registrate</a>
                          <a href="index.php?tipo=guest">Entra como invitado</a>
                      </div>
                    <?php if($isLoginIncorrecto==true){

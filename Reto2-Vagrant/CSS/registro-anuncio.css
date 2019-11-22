@@ -52,3 +52,12 @@ form{
     align-items: center;
 
 }
+input[type=submit]{
+    padding: 8px;
+    background-color: white;
+    border: 1px solid gray;
+}
+input[type=submit]:hover{
+    border:1px solid var(--thundercode-primary-color);
+    color: var(--thundercode-primary-color);
+}

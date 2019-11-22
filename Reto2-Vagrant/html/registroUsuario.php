@@ -18,17 +18,18 @@ function registroMal($username,$pass,$malRegistro)
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
         <meta charset="UTF-8">
         <title>Registro.php</title>
-        <link rel="stylesheet" href="../../CSS/global.css">
-        <link rel="stylesheet" href="../../CSS/registro-usuario.css">
-    </head>
-    <body>
+        <link rel="stylesheet" href="../CSS/global.css">
+        <link rel="stylesheet" href="../CSS/registro-usuario.css">
+        <link rel="stylesheet" href="../CSS/header.css">
+        <script src="../javascript/header.js"></script>
+
     <div class="contenedor">
         <div id="formuRegistro" class="cFormulario">
 
-            <form action="comprobarRegistro.php" method="post">
+            <form action="../Php-actions/RegistroUsuario/comprobarRegistroUsuario.php" method="post">
                 <div class="tituloFormulario"><h2>Registrate</h2></div>
                 <div class="camposFormulario">
                 <input type="text" name="username" id="username" placeholder="Nombre de usuario">
@@ -46,7 +47,7 @@ function registroMal($username,$pass,$malRegistro)
                 }
                 } ?>
                 <div class="linkFormulario">
-                <a href="../../html/login.php">Ya tengo una cuenta</a>
+                <a href="login.php">Ya tengo una cuenta</a>
 
                 </div>
             </form>

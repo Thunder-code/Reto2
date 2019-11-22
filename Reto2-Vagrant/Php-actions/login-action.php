@@ -1,33 +1,27 @@
 <?php
 $isLoginIncorrecto = "";
 $tipo ="";
-
 $usuario = $_POST["usuario"];
 $password = $_POST["password"];
 //Funcion para comprobar los datos del login con la base de datos
 function comprobarLogin ($dbh, $usuario,$password){
     $data = array("usuario" => $usuario,
-                  "password" => $password);
-
+        "password" => $password);
     $stmt = $dbh->prepare("SELECT nomUsuario,password FROM Usuario Where nomUsuario = :usuario AND password = :password");
     $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute($data);
-
     $row = $stmt->fetch();
-
     if($row == null){
         $isLoginIncorrecto = true;
-
-        require "../html/login.php";
-
+        header("Location: ../html/login.php");
     }
-      else {
+    else {
         $isLoginIncorrecto = false;
         $tipo = "user";
-        require "../html/index.php";
-
-
-      }
+        require_once "../html/index.php";
+        session_start();
+        $_SESSION['registro'] = $usuario;
+    }
 }
 require_once "BD/conexionBD.php";
 $dbh = connect();

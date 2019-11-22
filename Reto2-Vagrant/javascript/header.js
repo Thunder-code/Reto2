@@ -28,6 +28,30 @@ function hideSubMenu(el){
 
 function cambiarVentana() {
     window.close();
-    window.open("login.php")
+    window.open("../html/login.php")
 
+
+}
+function cambiaraAnuncio() {
+    window.close();
+    window.open("../html/registroAnuncio.php")
+}
+
+function cambiaraMisAnuncios() {
+    window.close();
+    window.open("../html/misAnuncios.php")
+}
+function cambiaraEmpresa() {
+    window.close();
+    window.open("../html/registroEmpresa.php")
+}
+
+function cambiaraMiPerfil() {
+    window.close();
+    window.open("../html/datosUsuario.php")
+}
+
+function cambiaraAboutUs() {
+    window.close();
+    window.open("../html/aboutus.php")
 }

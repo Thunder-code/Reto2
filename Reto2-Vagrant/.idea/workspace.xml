@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7039a936-705a-465d-8c9b-a6a5e28f3d27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Php-actions/BD/anuncio.php" beforeDir="false" afterPath="$PROJECT_DIR$/Php-actions/BD/anuncio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="7039a936-705a-465d-8c9b-a6a5e28f3d27" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -72,12 +66,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.llenarCBSubcategorias.php">
     <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8765/index.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="llenarCBSubcategorias.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Php-actions/llenarCB/llenarCBSubcategorias.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.llenarCBSubcategorias.php" />
         <item itemvalue="JavaScript Debug.index.php" />
       </list>
     </recent_temporary>
@@ -103,6 +101,14 @@
       <workItem from="1574148010216" duration="14264000" />
       <workItem from="1574200069533" duration="19000" />
       <workItem from="1574200090875" duration="901000" />
+      <workItem from="1574234343216" duration="7650000" />
+      <workItem from="1574243879867" duration="564000" />
+      <workItem from="1574246221193" duration="2601000" />
+<<<<<<< Updated upstream
+      <workItem from="1574376769660" duration="2348000" />
+=======
+      <workItem from="1574337811246" duration="7000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -129,6 +135,10 @@
           <url>file://$PROJECT_DIR$/particles.js-master/particulas.js</url>
           <line>10</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Php-actions/BD/anuncio.php</url>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
