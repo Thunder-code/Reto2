@@ -1,7 +1,7 @@
 <?php
-require "../BD/conexionBD.php";
-require "../BD/anuncio.php";
-require "../BD/empresa.php";
+require_once "../BD/conexionBD.php";
+require_once "../BD/anuncio.php";
+require_once "../BD/empresa.php";
 
 $dbh = connect();
 
@@ -16,6 +16,6 @@ move_uploaded_file($rutafototemporal,$nuevaRuta);
 
     $idEmpresa = selectIdEmpresa($dbh);
     insertAnuncio($dbh, $_POST["titulo"], $_POST["descripcion"],$_POST["categoria"],$_POST["subcategoria"],$nombreFoto,$idEmpresa);
-    header("Location: ../../html/index.php");
+   // header("Location: ../../html/index.php");
 }
 ?>

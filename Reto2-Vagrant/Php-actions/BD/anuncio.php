@@ -7,6 +7,9 @@ function insertAnuncio($dbh,$titulo,$descripcion,$categoria,$subcategoria,$nombr
     print_r($data);
     $stmt = $dbh->prepare("INSERT INTO Anuncio (imagen,titulo,descripcion,idEmpresa,idCategoria,idSubcategoria) VALUES (:imagen,:titulo,:descripcion,:idempresa,:idcategoria,:subcategoria)") ;
     $stmt->execute($data);
+
+    $cuenta = $stmt->rowCount();
+    echo $cuenta;
 }
 
 //Carga inicial de anuncions en la pagina principal
