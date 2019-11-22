@@ -1,6 +1,6 @@
 <?php
-    require "../BD/conexionBD.php";
-    require "../BD/usuario.php";
+    require "../Php-actions/BD/conexionBD.php";
+    require "../Php-actions/BD/usuario.php";
 
     $dbh = connect();
 
