@@ -4,6 +4,7 @@
 <script src="../javascript/index.js"></script>
 <script src="../javascript/login.js"></script>
 <script src="../javascript/filtros.js"></script>
+
 <link rel="stylesheet" href="../CSS/index.css">
 <link rel="stylesheet" href="../CSS/global.css">
 <link rel="stylesheet" href="../CSS/filtros.css">
@@ -35,13 +36,7 @@ $dbh = connect();
                               <div class='nomSubcategoria'>" . "<p> Subcategoria </p>" . $row["nomSubcategoria"] . "</div>
                             </div>
                         </div>
-                        <div class='imgAnuncio'><img src='../../imagenes/" . $row["imagen"] . "'></div>
-                        
-                        <form action='../Php-actions/BorrarAnuncio/borrar.php' method='post'>
-                            <input type='radio' name='idAnuncio' value='" . $row["idAnuncio"] . "' hidden checked>  
-                            <input type='submit' name='bBorrar' value='Eliminar Anuncio'>
-                        </form>
-                        
+                        <div class='imgAnuncio'><img src='../../imagenes/" . $row["imagen"] . "'></div>                       
                     </div>";
             }
 

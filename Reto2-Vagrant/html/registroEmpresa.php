@@ -9,7 +9,7 @@
 <body>
     <div class="contenedor">
     <div id="formuEmpresa" class="cFormulario">
-      <form action="comprobarRegistro.php" method="get">
+      <form action="comprobarRegistroEmpresa.php" method="get">
           <div class="tituloFormulario"> <h2>Registra tu empresa</h2></div>
 
         <div class="inputsFormulario">
