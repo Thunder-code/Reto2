@@ -50,3 +50,8 @@ function cambiaraMiPerfil() {
     window.close();
     window.open("../html/datosUsuario.php")
 }
+
+function cambiaraAboutUs() {
+    window.close();
+    window.open("../html/aboutus.php")
+}

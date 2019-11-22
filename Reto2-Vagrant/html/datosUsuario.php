@@ -1,6 +1,7 @@
 <?php
     require "../Php-actions/BD/conexionBD.php";
     require "../Php-actions/BD/usuario.php";
+    require_once "header.php";
     $dbh = connect();
     session_start();
 ?>
@@ -31,3 +32,6 @@
         </div>
     </div>
 </div>
+<?php
+require_once "footer.php";
+?>
