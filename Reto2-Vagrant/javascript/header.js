@@ -34,11 +34,19 @@ function cambiarVentana() {
 }
 function cambiaraAnuncio() {
     window.close();
-    window.open("../Php-actions/RegistroAnuncio/registroAnuncio.php")
+    window.open("../html/registroAnuncio.php")
 }
-function cambiaraMiperfil(){
+
+function cambiaraMisAnuncios() {
     window.close();
-    window.open("../Php-actions/DatosUsuario/datosUsuario.php")
+    window.open("../html/misAnuncios.php")
+}
+function cambiaraEmpresa() {
+    window.close();
+    window.open("../html/registroEmpresa.php")
+}
 
-
+function cambiaraMiPerfil() {
+    window.close();
+    window.open("../html/datosUsuario.php")
 }
