@@ -4,5 +4,5 @@ include_once "../BD/conexionBD.php";
 
 $dbh = connect();
 deleteAnuncio($dbh,$_POST["idAnuncio"]);
-header("Location: ../../html/index.php");
+header("Location: ../../html/misAnuncios.php");
 ?>

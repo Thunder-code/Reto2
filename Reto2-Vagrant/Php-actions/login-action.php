@@ -13,7 +13,7 @@ function comprobarLogin ($dbh, $usuario,$password){
     $row = $stmt->fetch();
     if($row == null){
         $isLoginIncorrecto = true;
-        require_once"../html/login.php";
+        header("Location: ../html/login.php");
     }
     else {
         $isLoginIncorrecto = false;
@@ -21,7 +21,6 @@ function comprobarLogin ($dbh, $usuario,$password){
         require_once "../html/index.php";
         session_start();
         $_SESSION['registro'] = $usuario;
-        echo "Hola" . $_SESSION['registro'];
     }
 }
 require_once "BD/conexionBD.php";

@@ -37,7 +37,7 @@ $dbh = connect();
                               <div class='nomSubcategoria'>" . "<p> Subcategoria </p>" . $row["nomSubcategoria"] . "</div>
                             </div>
                         </div>
-                        <div class='imgAnuncio'><img src='../../imagenes/" . $row["imagen"] . "'></div>
+                        <div class='imgAnuncio'><img src='../imagenes/" . $row["imagen"] . "'></div>
                         
                         <form action='../Php-actions/BorrarAnuncio/borrar.php' method='post'>
                             <input type='radio' name='idAnuncio' value='" . $row["idAnuncio"] . "' hidden checked>  
