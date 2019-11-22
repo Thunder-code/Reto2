@@ -41,11 +41,9 @@
             <a href="#" class="nav-link" id="gear"><span><img src="../multimedia/gear.png"></span></a>
             <nav class="submenu">
                 <ul class="submenu-items">
-                    <li class="submenu-item"><a href="#" class="submenu-link">About</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">Contact</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link" onclick="cambiaraAboutUs()">About us</a></li>
+
                     <li class="submenu-item"><hr class="submenu-seperator" /></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">Support</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">FAQs</a></li>
                     <li class="submenu-item"><a href="#" onclick="cambiarVentana()" class="submenu-link">Cerrar Sesion</a></li>
                 </ul>
             </nav>

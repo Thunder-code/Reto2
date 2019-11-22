@@ -26,10 +26,10 @@ function datosUsuario ($dbh,$usuregis){
     $stmt = $dbh->prepare("Select u.idUsuario, u.nomUsuario,u.password,u.idEmpresa,e.nomEmpresa,e.telefono,e.email,e.direccion 
                                      FROM Usuario as u 
                                      LEFT join Empresa as e on u.idEmpresa = e.IdEmpresa where u.nomUsuario = :usuregis");
-    $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute($data);
-
-    echo "<div class='Usuario'>";
+    $array = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $array;
+/*
     while ($row = $stmt->fetch()) {
         echo "<div class='DtoUsuario'>
          <h2 class='nomUsuario'>" . $row->nomUsuario . "</h2>
@@ -39,7 +39,7 @@ function datosUsuario ($dbh,$usuregis){
          <div class='direccion'>" . $row->direccion . "</div>
          </div>";
     }
-    echo "</div>";
+*/
 }
 
 
