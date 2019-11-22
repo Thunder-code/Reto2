@@ -39,11 +39,8 @@ $dbh = connect();
                         <div class='imgAnuncio'><img src='../../imagenes/" . $row["imagen"] . "'></div>                       
                     </div>";
             }
-
-
         ?>
     </div>
-
 <?php
 require_once "footer.php";
 ?>
