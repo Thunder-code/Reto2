@@ -16,7 +16,7 @@ if(isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["passw
         header("Location: ../../html/login.php");
     }else {
         $malRegistro = true;
-        include "resgitroUsuario.php";
+        header("Location: ../../html/registroUsuario.php");
     }
 }
 

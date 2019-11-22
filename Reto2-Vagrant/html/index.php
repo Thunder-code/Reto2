@@ -36,7 +36,7 @@ $dbh = connect();
                               <div class='nomSubcategoria'>" . "<p> Subcategoria </p>" . $row["nomSubcategoria"] . "</div>
                             </div>
                         </div>
-                        <div class='imgAnuncio'><img src='../../imagenes/" . $row["imagen"] . "'></div>                       
+                        <div class='imgAnuncio'><img src='../imagenes/" . $row["imagen"] . "'></div>                       
                     </div>";
             }
         ?>

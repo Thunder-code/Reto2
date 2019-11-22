@@ -11,9 +11,10 @@ function insertEmpresa($dbh,$nombre,$email,$telefono,$direccion){
 
 function selectIdEmpresa($dbh){
     $data = array('nomusuario' => $_SESSION['registro']);
+
     $stmt = $dbh->prepare("select idEmpresa 
                            From Usuario
-                           where nomUsuario = usu4");
+                           where nomUsuario = :nomusuario");
     $stmt->execute($data);
 
     $stmt->setFetchMode(PDO::FETCH_OBJ);
