@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>registroEmpresa.php</title>
-    <link rel="stylesheet" href="../../CSS/global.css">
-    <link rel="stylesheet" href="../../CSS/registro-empresa.css">
+<?php
+require_once "header.php";
+?>
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/registro-empresa.css">
 </head>
 <body>
     <div class="contenedor">
     <div id="formuEmpresa" class="cFormulario">
-      <form action="comprobarRegistro.php" method="get">
+      <form action="../Php-actions/RegistroEmpresa/comprobarRegistroEmpresa.php" method="get">
           <div class="tituloFormulario"> <h2>Registra tu empresa</h2></div>
 
         <div class="inputsFormulario">
@@ -25,5 +23,6 @@
       </form>
     </div>
 </div>
-</body>
-</html>
+<?php
+require_once "footer.php";
+?>
