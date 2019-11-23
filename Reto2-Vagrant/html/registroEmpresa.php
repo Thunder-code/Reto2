@@ -12,8 +12,8 @@ require_once "header.php";
 
         <div class="inputsFormulario">
          <input type="text" name="nombre" id="nombreEmpresa" placeholder="Nombre">
-         <input type="text" name="email" id="emailEmpresa" placeholder="Email">
-         <input type="text" name="telefono" id="tlfEmpresa" placeholder="Telefono">
+         <input type="text" name="email" id="emailEmpresa" placeholder="Email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$" required>
+         <input type="text" name="telefono" id="tlfEmpresa" placeholder="Telefono" pattern="^[9|6]{1}([\d]{2}[-]*){3}[\d]{2}$" required>
          <input type="text" name="direccion" id="direccionEmpresa" placeholder="Direccion">
         </div>
 
