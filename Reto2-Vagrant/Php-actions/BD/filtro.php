@@ -10,7 +10,7 @@ function selectAnuncioFiltro($dbh,$titulo,$categoria,$subcategoria,$empresa){
         $cla .= " AND c.idCategoria = $categoria";
     }
   if($subcategoria != ""){
-        $cla .= " AND s.Subcategoria = $subcategoria";
+        $cla .= " AND s.idSubcategoria = $subcategoria";
     }
   if($empresa != ""){
         $cla .= " AND nomEmpresa LIKE '%$empresa%'";
